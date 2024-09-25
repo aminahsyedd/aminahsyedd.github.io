@@ -1,0 +1,68 @@
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 12pt;
+    background-color: #f0f8ff; /* Light blue background */
+    color: #333; /* Dark grey text */
+    margin: 20pt; /* Margin greater than 10pt */
+}
+
+/* Heading styles */
+h1 {
+    font-size: 2em; /* Larger font for H1 */
+    color: #0056b3; /* Blue color */
+}
+
+h2 {
+    font-size: 1.5em; /* Medium font for H2 */
+    color: #007bff; /* Lighter blue color */
+}
+
+h3 {
+    font-size: 1.2em; /* Smaller font for H3 */
+    color: #008cba; /* Even lighter blue color */
+}
+
+/* Paragraph styles */
+p {
+    font-size: 1em; /* Default paragraph size */
+    color: #555; /* Medium grey */
+}
+
+/* Link styles */
+a {
+    color: #007bff; /* Default link color */
+    text-decoration: none; /* Remove underline */
+}
+
+a:visited {
+    color: #5a5a5a; /* Color for visited links */
+}
+
+a:hover {
+    color: #ff4500; /* Color for hovered links */
+    text-decoration: underline; /* Underline on hover */
+}
+
+a:active {
+    color: #ff0000; /* Color when link is active */
+}
+
+/* Table styles */
+.table {
+    display: table;
+    width: 100%; /* Full width */
+    border-collapse: collapse; /* Collapse borders */
+}
+
+.table-cell {
+    display: table-cell;
+    border: 1px solid #ccc; /* Light grey border */
+    padding: 10px; /* Padding inside cells */
+}
+
+/* Additional styles for the layout */
+.link-description {
+    display: flex;
+    flex-direction: column;
+}
