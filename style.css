@@ -1,68 +1,70 @@
-/* Body styles */
+/* Body Styles */
 body {
     font-family: Arial, sans-serif;
     font-size: 12pt;
     background-color: #f0f8ff; /* Light blue background */
-    color: #333; /* Dark grey text */
+    color: #333333; /* Dark gray text */
     margin: 20pt; /* Margin greater than 10pt */
 }
 
-/* Heading styles */
+/* Heading Styles */
 h1 {
-    font-size: 2em; /* Larger font for H1 */
-    color: #0056b3; /* Blue color */
+    font-size: 24pt;
+    color: #1e90ff; /* Dodger Blue */
 }
 
 h2 {
-    font-size: 1.5em; /* Medium font for H2 */
-    color: #007bff; /* Lighter blue color */
+    font-size: 20pt;
+    color: #ff4500; /* Orange Red */
 }
 
 h3 {
-    font-size: 1.2em; /* Smaller font for H3 */
-    color: #008cba; /* Even lighter blue color */
+    font-size: 16pt;
+    color: #32cd32; /* Lime Green */
 }
 
-/* Paragraph styles */
+/* Paragraph Styles */
 p {
-    font-size: 1em; /* Default paragraph size */
-    color: #555; /* Medium grey */
+    font-size: 14pt;
+    color: #555555; /* Medium gray */
 }
 
-/* Link styles */
+/* Link Styles */
 a {
-    color: #007bff; /* Default link color */
-    text-decoration: none; /* Remove underline */
+    color: #0000ff; /* Blue for unvisited links */
+    text-decoration: none; /* No underline */
 }
 
 a:visited {
-    color: #5a5a5a; /* Color for visited links */
+    color: #800080; /* Purple for visited links */
 }
 
 a:hover {
-    color: #ff4500; /* Color for hovered links */
-    text-decoration: underline; /* Underline on hover */
+    color: #ff1493; /* Deep Pink on hover */
 }
 
 a:active {
-    color: #ff0000; /* Color when link is active */
+    color: #ff0000; /* Red when active */
 }
 
-/* Table styles */
+/* Table Layout Styles */
 .table {
-    display: table;
-    width: 100%; /* Full width */
-    border-collapse: collapse; /* Collapse borders */
+    display: grid;
+    grid-template-columns: 1fr 2fr; /* Two columns: 1 for link, 2 for description */
+    gap: 10px; /* Space between cells */
+    margin-top: 20pt; /* Margin for spacing */
 }
 
-.table-cell {
-    display: table-cell;
-    border: 1px solid #ccc; /* Light grey border */
-    padding: 10px; /* Padding inside cells */
+.cell {
+    padding: 10pt;
+    border: 1px solid #ddd; /* Light gray border */
 }
 
-/* Additional styles for the layout */
-.link-description {
-    display: flex;
-    flex-direction: column;
+/* Background Colors for Cells */
+.link-container {
+    background-color: #e0f7fa; /* Light cyan for link cell */
+}
+
+.description-container {
+    background-color: #fff3e0; /* Light orange for description cell */
 }
