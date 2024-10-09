@@ -8,10 +8,18 @@
     <style>
         body {
             font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            font-size: 3em; /* Increased size */
+            margin: 30px 0; /* Spacing above and below */
+            text-align: center; /* Center the heading */
         }
         nav {
             background-color: #333;
             overflow: hidden;
+            margin-bottom: 20px;
         }
         nav a, .dropbtn {
             float: left;
@@ -26,28 +34,27 @@
             color: black;
         }
         .dropdown {
-            float: left;
-            overflow: hidden;
+            position: relative;
+            display: inline-block;
         }
         .dropdown-content {
             display: none;
             position: absolute;
             background-color: #f9f9f9;
-            min-width: 160px;
+            min-width: 200px; /* Increased width */
             box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
             z-index: 1;
         }
         .dropdown-content a {
-            float: none;
             color: black;
-            padding: 12px 16px;
+            padding: 12px 16px; /* Increased padding for links */
             text-decoration: none;
-            text-align: left;
+            display: block;
         }
         .dropdown-content a:hover {
             background-color: #ddd;
         }
-        .dropdown:hover .dropdown-content {
+        .show {
             display: block;
         }
     </style>
@@ -64,20 +71,16 @@
     </div>
 
     <nav>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
+        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
+        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
         <div class="dropdown">
-            <button class="dropbtn" onmouseover="this.style.backgroundColor='#ddd'; this.style.color='black';" 
-                    onmouseout="this.style.backgroundColor='inherit'; this.style.color='white';">Accomplishments</button>
-            <div class="dropdown-content">
-                <a href="current_roles.html" onmouseover="this.style.backgroundColor='#ddd'; this.style.color='black';" 
-                   onmouseout="this.style.backgroundColor=''; this.style.color='black';">Current Roles</a>
-                <a href="awards.html" onmouseover="this.style.backgroundColor='#ddd'; this.style.color='black';" 
-                   onmouseout="this.style.backgroundColor=''; this.style.color='black';">Awards</a>
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE" target="_blank">My School</a>
+                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a>
             </div>
         </div>
-        <a href="services.html" onmouseover="this.style.backgroundColor='#ddd'; this.style.color='black';" 
-           onmouseout="this.style.backgroundColor=''; this.style.color='white';">Services</a>
-        <a href="contact.html" onmouseover="this.style.backgroundColor='#ddd'; this.style.color='black';" 
-           onmouseout="this.style.backgroundColor=''; this.style.color='white';">Contact Me</a>
     </nav>
 
     <section id="about">
@@ -90,5 +93,23 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("dropdown-content");
+                for (let i = 0; i < dropdowns.length; i++) {
+                    const openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        }
+    </script>
 </body>
 </html>
