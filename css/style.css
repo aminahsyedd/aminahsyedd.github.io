@@ -1,43 +1,63 @@
 body {
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
+    padding: 0; /* Remove default padding */
+    background-color: #f4f4f4; /* Optional: Add a light background color */
 }
 
 h1 {
-    font-size: 3em; /* Increased size */
-    margin: 30px 0; /* Spacing above and below */
+    font-size: 4em; /* Increased size for the heading */
+    margin: 40px 0; /* Increased spacing above and below */
     text-align: center; /* Center the heading */
 }
 
 button {
-    font-size: 1.5em; /* Increased font size for buttons */
-    padding: 15px 30px; /* Added more padding */
+    font-size: 2em; /* Increased font size for buttons */
+    padding: 20px 40px; /* Added more padding */
     cursor: pointer; /* Change cursor on hover */
 }
 
 #greeting {
-    font-size: 2em; /* Increased font size */
-    margin: 30px 0; /* Spacing above and below */
+    font-size: 2.5em; /* Increased font size */
+    margin: 40px 0; /* Increased spacing above and below */
     text-align: center; /* Center the greeting */
 }
 
 .image-container {
     text-align: center; /* Center the image */
-    margin: 30px 0; /* Spacing around the image */
+    margin: 40px 0; /* Increased spacing around the image */
 }
 
 #myImage {
-    width: 400px; /* Increased image size */
+    width: 100%; /* Make the image take full width */
+    max-width: 600px; /* Set a maximum width */
     transition: transform 0.2s; /* Smooth zoom effect */
 }
 
 #myImage:hover {
-    transform: scale(1.05); /* Slightly zoom on hover */
+    transform: scale(1.1); /* Slightly zoom on hover */
 }
 
 nav {
-    margin: 30px 0; /* Spacing around the navigation */
+    background-color: #333; /* Dark background */
+    overflow: hidden; /* Clear floats */
+    padding: 20px 0; /* Increased padding for nav */
+    margin-bottom: 40px; /* Space below navigation */
+}
+
+nav a {
+    float: left;
+    display: block;
+    color: white; /* White text color */
+    text-align: center;
+    padding: 20px 30px; /* Increased padding */
+    font-size: 1.5em; /* Larger font size for links */
+    text-decoration: none;
+}
+
+nav a:hover {
+    background-color: #ddd; /* Light background on hover */
+    color: black; /* Dark text on hover */
 }
 
 .dropdown {
@@ -49,14 +69,15 @@ nav {
     display: none;
     position: absolute;
     background-color: #f9f9f9;
-    min-width: 200px; /* Increased width */
+    min-width: 250px; /* Increased width */
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 15px 20px; /* Increased padding for links */
+    padding: 20px 30px; /* Increased padding for links */
+    font-size: 1.2em; /* Larger font size */
     text-decoration: none;
     display: block;
 }
@@ -67,4 +88,18 @@ nav {
 
 .show {
     display: block;
+}
+
+/* Media query for responsiveness */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 3em; /* Adjust heading size */
+    }
+    button {
+        font-size: 1.5em; /* Adjust button size */
+    }
+    #myImage {
+        width: 100%; /* Make image responsive */
+        max-width: 100%; /* Remove max width restriction */
+    }
 }

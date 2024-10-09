@@ -1,7 +1,7 @@
 document.getElementById('nameButton').addEventListener('click', function() {
     const name = prompt("Please enter your name:");
     if (name) {
-        document.getElementById('greeting').innerText = `Hello, ${name}! Welcome to my homepage!`;
+        document.getElementById('greeting').innerText = `Hello, ${name}! Welcome to my homepage!`; // Corrected syntax
     }
 });
 
