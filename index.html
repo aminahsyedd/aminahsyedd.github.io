@@ -13,7 +13,7 @@
     
     <div class="image-container">
         <a href="/images/my_imagebig.jpg">
-        <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
+            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
         </a>
     </div>
 
@@ -28,6 +28,41 @@
             </div>
         </div>
     </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>This is a placeholder text about me. Here, I can talk about my interests, hobbies, and background. I love web design and programming, and I'm excited to share my journey with you!</p>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <ul>
+            <li>Web Design: Creating beautiful and functional websites.</li>
+            <li>Graphic Design: Designing logos, banners, and other visual elements.</li>
+            <li>Consulting: Providing advice on web development and design strategies.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you have any questions or would like to get in touch, please feel free to reach out!</p>
+        <form action="#" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
 
     <script src="/js/main.js"></script>
 </body>
