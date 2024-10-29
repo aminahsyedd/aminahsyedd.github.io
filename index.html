@@ -1,99 +1,248 @@
+Got it! Let’s include the form while keeping everything else intact. Here’s the updated HTML with the form added:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Structure Practice</title><!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Your Homepage</title>
-        <link rel="stylesheet" href="/css/style.css">
-        <style>
-            /* Your existing styles here */
-        </style>
-    </head>
-    <body>
-        <h1>Welcome to My Homepage</h1>
-        <button id="nameButton">Click to Enter Your Name</button>
-        <p id="greeting"></p>
-    
-        <div class="image-container">
-            <a href="/images/my_imagebig.jpg">
-                <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
-            </a>
-        </div>
-    
-        <nav>
-            <!-- Navigation links -->
-        </nav>
-    
-        <section id="about">
-            <h2>About Me</h2>
-            <p>Avid first year Business Technology Management student...</p>
-        </section>
-    
-        <!-- User Input Form -->
-        <form id="userForm">
-            <h2>User Input Form</h2>
-            <label for="username">Name:</label>
-            <input type="text" id="username" required>
-    
-            <label for="email">Email:</label>
-            <input type="email" id="email" required>
-    
-            <label for="age">Age:</label>
-            <input type="number" id="age" required>
-    
-            <label>Gender:</label>
-            <input type="radio" name="gender" value="Male" required> Male
-            <input type="radio" name="gender" value="Female"> Female
-            <input type="radio" name="gender" value="Other"> Other
-    
-            <label for="interests">Interests:</label>
-            <input type="checkbox" name="interests" value="Sports"> Sports
-            <input type="checkbox" name="interests" value="Music"> Music
-            <input type="checkbox" name="interests" value="Art"> Art
-    
-            <label for="feedback">Feedback:</label>
-            <textarea id="feedback" rows="4" required></textarea>
-    
-            <button type="submit">Submit</button>
-            <button type="reset" id="clearButton">Clear</button>
-        </form>
-    
-        <footer>
-            <p>&copy; 2024 Aminah Syed.</p>
-        </footer>
-    
-        <script src="/js/main.js"></script>
-        <script src="/js/form.js"></script>
-    </body>
-    </html>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Homepage</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Reset some default styles */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Improved readability */
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #2c3e50; /* Dark blue color */
+        }
+
+        h1 {
+            font-size: 3.5em;
+            margin: 20px 0;
+        }
+
+        h2 {
+            margin: 20px 0;
+            font-size: 2.5em;
+        }
+
+        button {
+            background-color: #3498db; /* Blue background */
+            color: white; /* White text */
+            border: none;
+            padding: 15px 30px; /* Increased padding */
+            font-size: 1.5em; /* Increased font size */
+            cursor: pointer;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #2980b9; /* Darker blue on hover */
+        }
+
+        #greeting {
+            font-size: 2em;
+            margin: 30px 0;
+            text-align: center;
+            color: #27ae60; /* Green color for greeting */
+        }
+
+        .image-container {
+            text-align: center;
+            margin: 40px 0;
+        }
+
+        #myImage {
+            width: 100%;
+            max-width: 600px; /* Maximum width */
+            border-radius: 10px; /* Rounded image corners */
+            transition: transform 0.2s;
+        }
+
+        #myImage:hover {
+            transform: scale(1.05); /* Slight zoom on hover */
+        }
+
+        nav {
+            background-color: #2c3e50; /* Dark background for nav */
+            overflow: hidden; /* Clear floats */
+            padding: 15px 0; /* Padding for nav */
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #34495e; /* Darker background on hover */
+        }
+
+        .dropdown {
+            position: relative;
+            display: inline-block;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px; /* Minimum width for dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #ddd; /* Light background on hover */
+        }
+
+        .show {
+            display: block; /* Show dropdown when activated */
+        }
+
+        #about {
+            background-color: #ecf0f1; /* Light gray background for contrast */
+            padding: 20px; /* Padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px auto; /* Center the section */
+            max-width: 800px; /* Limit width */
+        }
+
+        form {
+            background: #fff; /* White background for form */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin: 20px auto;
+            max-width: 600px; /* Limit form width */
+        }
+
+        form label {
+            display: block;
+            margin: 15px 0 5px; /* Margin for labels */
+        }
+
+        form input, form textarea {
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            margin-bottom: 20px; /* Space below inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded corners */
+        }
+
+        footer {
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1em;
+            color: #666; /* Gray color for footer */
+        }
+
+        /* Media query for responsiveness */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.5em; /* Smaller heading on mobile */
+            }
+            button {
+                font-size: 1.2em; /* Smaller button size */
+            }
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <h1>My Website Header</h1>
-    </header>
+    <h1>Welcome to My Homepage</h1>
+    <button id="nameButton">Click to Enter Your Name</button>
+    <p id="greeting"></p>
+    
+    <div class="image-container">
+        <a href="/images/my_imagebig.jpg">
+            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
+        </a>
+    </div>
+
     <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-        </ul>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
+        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
+        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE" target="_blank">My School</a>
+                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a>
+            </div>
+        </div>
     </nav>
-    <main>
-        <h2>Main Content</h2>
-    </main>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work ethic and communication skills honed through years of volunteer work. Constantly developing and strengthening technical skills through collaboration in academic and professional settings.</p>
+    </section>
+
+    <form id="userForm">
+        <h2>Contact Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone">
+
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" name="contactMethod" value="Email" required>Email</label>
+        <label><input type="radio" name="contactMethod" value="Phone">Phone</label>
+        <label><input type="radio" name="contactMethod" value="None">None</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <label>Interests:</label>
+        <label><input type="checkbox" name="interests" value="Web Development">Web Development</label>
+        <label><input type="checkbox" name="interests" value="Data Analysis">Data Analysis</label>
+        <label><input type="checkbox" name="interests" value="Machine Learning">Machine Learning</label>
+
+        <button type="submit">Submit</button>
+        <button type="button" id="clearButton">Clear</button>
+    </form>
+
     <footer>
-        <p>Footer Information</p>
+        <p>&copy; 2024 Aminah Syed.</p>
     </footer>
 
-    <dl>
-        <dt>Term 1</dt>
-        <dd>Description for term 1.</dd>
-        <dt>Term 2</dt>
-        <dd>Description for term 2.</dd>
-    </dl>
-    
-</body>
-</html>
+    <script src="/js/main.js"></script>
+    <script src="/js/form.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("
