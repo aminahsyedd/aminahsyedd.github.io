@@ -61,24 +61,6 @@
             color: #27ae60; /* Green color for greeting */
         }
 
-        /* Image container styling */
-        .image-container {
-            text-align: center;
-            margin: 40px 0;
-        }
-
-        /* Image styles */
-        #myImage {
-            width: 100%;
-            max-width: 600px; /* Maximum width */
-            border-radius: 10px; /* Rounded image corners */
-            transition: transform 0.2s; /* Zoom effect */
-        }
-
-        #myImage:hover {
-            transform: scale(1.05); /* Slight zoom on hover */
-        }
-
         /* Navigation bar styling */
         nav {
             background-color: #2c3e50; /* Dark background for nav */
@@ -117,7 +99,6 @@
             z-index: 1; /* Stack above other elements */
         }
 
-        /* Dropdown link styles */
         .dropdown-content a {
             color: black; /* Text color */
             padding: 12px 16px; /* Padding for links */
@@ -188,12 +169,6 @@
     <button id="nameButton">Click to Enter Your Name</button>
     <p id="greeting"></p>
     
-    <div class="image-container">
-        <a href="/images/my_imagebig.jpg">
-            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
-        </a>
-    </div>
-
     <nav>
         <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
         <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
@@ -236,4 +211,14 @@
         <label><input type="checkbox" name="interests" value="Data Analysis">Data Analysis</label>
         <label><input type="checkbox" name="interests" value="Machine Learning">Machine Learning</label>
 
-        <button
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+</body>
+</html>
