@@ -13,6 +13,7 @@
             padding: 0;
         }
 
+        /* Body styling */
         body {
             font-family: 'Arial', sans-serif;
             background-color: #f4f4f4; /* Light background color */
@@ -20,6 +21,7 @@
             line-height: 1.6; /* Improved readability */
         }
 
+        /* Heading styles */
         h1, h2 {
             text-align: center;
             color: #2c3e50; /* Dark blue color */
@@ -35,6 +37,7 @@
             font-size: 2.5em;
         }
 
+        /* Button styles */
         button {
             background-color: #3498db; /* Blue background */
             color: white; /* White text */
@@ -43,13 +46,14 @@
             font-size: 1.5em; /* Increased font size */
             cursor: pointer;
             border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s;
+            transition: background-color 0.3s; /* Transition effect */
         }
 
         button:hover {
             background-color: #2980b9; /* Darker blue on hover */
         }
 
+        /* Greeting message styles */
         #greeting {
             font-size: 2em;
             margin: 30px 0;
@@ -57,28 +61,32 @@
             color: #27ae60; /* Green color for greeting */
         }
 
+        /* Image container styling */
         .image-container {
             text-align: center;
             margin: 40px 0;
         }
 
+        /* Image styles */
         #myImage {
             width: 100%;
             max-width: 600px; /* Maximum width */
             border-radius: 10px; /* Rounded image corners */
-            transition: transform 0.2s;
+            transition: transform 0.2s; /* Zoom effect */
         }
 
         #myImage:hover {
             transform: scale(1.05); /* Slight zoom on hover */
         }
 
+        /* Navigation bar styling */
         nav {
             background-color: #2c3e50; /* Dark background for nav */
             overflow: hidden; /* Clear floats */
             padding: 15px 0; /* Padding for nav */
         }
 
+        /* Navigation link styles */
         nav a {
             float: left;
             display: block;
@@ -87,32 +95,34 @@
             padding: 15px 20px;
             font-size: 1.2em;
             text-decoration: none;
-            transition: background-color 0.3s;
+            transition: background-color 0.3s; /* Transition effect */
         }
 
         nav a:hover {
             background-color: #34495e; /* Darker background on hover */
         }
 
+        /* Dropdown styling */
         .dropdown {
             position: relative;
-            display: inline-block;
+            display: inline-block; /* Inline-block for dropdown */
         }
 
         .dropdown-content {
-            display: none;
-            position: absolute;
-            background-color: #f9f9f9;
+            display: none; /* Hidden by default */
+            position: absolute; /* Position relative to the dropdown */
+            background-color: #f9f9f9; /* Dropdown background color */
             min-width: 200px; /* Minimum width for dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-            z-index: 1;
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
+            z-index: 1; /* Stack above other elements */
         }
 
+        /* Dropdown link styles */
         .dropdown-content a {
-            color: black;
-            padding: 12px 16px;
+            color: black; /* Text color */
+            padding: 12px 16px; /* Padding for links */
             text-decoration: none;
-            display: block;
+            display: block; /* Block display */
         }
 
         .dropdown-content a:hover {
@@ -123,6 +133,7 @@
             display: block; /* Show dropdown when activated */
         }
 
+        /* About section styling */
         #about {
             background-color: #ecf0f1; /* Light gray background for contrast */
             padding: 20px; /* Padding for spacing */
@@ -131,23 +142,24 @@
             max-width: 800px; /* Limit width */
         }
 
+        /* Contact form styling */
         form {
             background: #fff; /* White background for form */
-            padding: 20px;
+            padding: 20px; /* Padding for spacing */
             border-radius: 10px; /* Rounded corners */
             box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            margin: 20px auto;
+            margin: 20px auto; /* Center the form */
             max-width: 600px; /* Limit form width */
         }
 
         form label {
-            display: block;
+            display: block; /* Block display for labels */
             margin: 15px 0 5px; /* Margin for labels */
         }
 
         form input, form textarea {
             width: 100%; /* Full width inputs */
-            padding: 10px;
+            padding: 10px; /* Padding for inputs */
             margin-bottom: 20px; /* Space below inputs */
             border: 1px solid #ccc; /* Light border */
             border-radius: 5px; /* Rounded corners */
@@ -155,7 +167,7 @@
 
         footer {
             text-align: center;
-            margin: 20px 0;
+            margin: 20px 0; /* Margin for footer */
             font-size: 1em;
             color: #666; /* Gray color for footer */
         }
@@ -224,22 +236,4 @@
         <label><input type="checkbox" name="interests" value="Data Analysis">Data Analysis</label>
         <label><input type="checkbox" name="interests" value="Machine Learning">Machine Learning</label>
 
-        <button type="submit">Submit</button>
-        <button type="button" id="clearButton">Clear</button>
-    </form>
-
-    <footer>
-        <p>&copy; 2024 Aminah Syed.</p>
-    </footer>
-
-    <script src="/js/main.js"></script>
-    <script src="/js/form.js"></script>
-    <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
-        }
-
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
-            if (!event.target.matches('.dropbtn')) {
-                const dropdowns = document.getElementsByClassName("
+        <button
