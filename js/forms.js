@@ -1,4 +1,7 @@
-// form.js
+// Show the form when the button is clicked
+document.getElementById('nameButton').addEventListener('click', function() {
+    document.getElementById('userForm').style.display = 'block'; // Show the form
+});
 
 // Add an event listener to the form for the 'submit' event
 document.getElementById('userForm').addEventListener('submit', function(event) {
@@ -25,4 +28,8 @@ document.getElementById('userForm').addEventListener('submit', function(event) {
 document.getElementById('clearButton').addEventListener('click', function() {
     // Remove the stored form data from local storage
     localStorage.removeItem('formData'); // Optional: clears the stored data when clear button is clicked
+
+    // Optionally, clear the form fields
+    document.getElementById('userForm').reset(); // Reset the form fields
+    alert('Form data cleared!');
 });

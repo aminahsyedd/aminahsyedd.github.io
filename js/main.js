@@ -5,7 +5,7 @@ document.getElementById('nameButton').addEventListener('click', function() {
     // Check if the user entered a name
     if (name) {
         // Update the greeting paragraph with a personalized message
-        document.getElementById('greeting').innerText = `Hello, ${name}! Welcome to my homepage!`; // Corrected syntax for greeting message
+        document.getElementById('greeting').innerText = `Hello, ${name}! Welcome to my homepage!`;
     }
 });
 
@@ -30,4 +30,4 @@ window.onclick = function(event) {
             }
         }
     }
-}
+};
