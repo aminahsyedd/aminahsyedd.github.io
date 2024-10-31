@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -16,15 +17,20 @@
         /* Body styling */
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4; /* Light background color */
-            color: #333; /* Dark text color */
-            line-height: 1.6; /* Improved readability */
+            background-color: #f4f4f4;
+            /* Light background color */
+            color: #333;
+            /* Dark text color */
+            line-height: 1.6;
+            /* Improved readability */
         }
 
         /* Heading styles */
-        h1, h2 {
+        h1,
+        h2 {
             text-align: center;
-            color: #2c3e50; /* Dark blue color */
+            color: #2c3e50;
+            /* Dark blue color */
         }
 
         h1 {
@@ -38,19 +44,26 @@
         }
 
         /* Button styles */
-        button {
-            background-color: #3498db; /* Blue background */
-            color: white; /* White text */
+        .btn {
+            background-color: #3498db;
+            /* Blue background */
+            color: white;
+            /* White text */
             border: none;
-            padding: 15px 30px; /* Increased padding */
-            font-size: 1.5em; /* Increased font size */
+            padding: 15px 30px;
+            /* Increased padding */
+            font-size: 1.5em;
+            /* Increased font size */
             cursor: pointer;
-            border-radius: 5px; /* Rounded corners */
-            transition: background-color 0.3s; /* Transition effect */
+            border-radius: 5px;
+            /* Rounded corners */
+            transition: background-color 0.3s;
+            /* Transition effect */
         }
 
         button:hover {
-            background-color: #2980b9; /* Darker blue on hover */
+            background-color: #2980b9;
+            /* Darker blue on hover */
         }
 
         /* Greeting message styles */
@@ -58,14 +71,18 @@
             font-size: 2em;
             margin: 30px 0;
             text-align: center;
-            color: #27ae60; /* Green color for greeting */
+            color: #27ae60;
+            /* Green color for greeting */
         }
 
         /* Navigation bar styling */
         nav {
-            background-color: #2c3e50; /* Dark background for nav */
-            overflow: hidden; /* Clear floats */
-            padding: 15px 0; /* Padding for nav */
+            background-color: #2c3e50;
+            /* Dark background for nav */
+            /*overflow: hidden;*/
+            /* Clear floats */
+            padding: 15px 0;
+            /* Padding for nav */
         }
 
         /* Navigation link styles */
@@ -77,114 +94,182 @@
             padding: 15px 20px;
             font-size: 1.2em;
             text-decoration: none;
-            transition: background-color 0.3s; /* Transition effect */
+            transition: background-color 0.3s;
+            /* Transition effect */
         }
 
         nav a:hover {
-            background-color: #34495e; /* Darker background on hover */
+            background-color: #34495e;
+            /* Darker background on hover */
         }
 
         /* Dropdown styling */
         .dropdown {
             position: relative;
-            display: inline-block; /* Inline-block for dropdown */
+            display: inline-block;
+            /* Inline-block for dropdown */
         }
 
         .dropdown-content {
-            display: none; /* Hidden by default */
-            position: absolute; /* Position relative to the dropdown */
-            background-color: #f9f9f9; /* Dropdown background color */
-            min-width: 200px; /* Minimum width for dropdown */
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect */
-            z-index: 1; /* Stack above other elements */
+            display: none;
+            /* Hidden by default */
+            position: absolute;
+            /* Position relative to the dropdown */
+            background-color: #f9f9f9;
+            /* Dropdown background color */
+            min-width: 200px;
+            /* Minimum width for dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            /* Shadow effect */
+            z-index: 1;
+            /* Stack above other elements */
         }
 
         .dropdown-content a {
-            color: black; /* Text color */
-            padding: 12px 16px; /* Padding for links */
+            color: black;
+            /* Text color */
+            padding: 12px 16px;
+            /* Padding for links */
             text-decoration: none;
-            display: block; /* Block display */
+            display: block;
+            /* Block display */
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd; /* Light background on hover */
+            background-color: #ddd;
+            /* Light background on hover */
+        }
+
+        .dropbtn {
+            color: white;
+            background-color: #2c3e50;
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s;
+            border: none;
         }
 
         .show {
-            display: block; /* Show dropdown when activated */
+            display: block;
+            /* Show dropdown when activated */
         }
 
         /* About section styling */
         #about {
-            background-color: #ecf0f1; /* Light gray background for contrast */
-            padding: 20px; /* Padding for spacing */
-            border-radius: 10px; /* Rounded corners */
-            margin: 20px auto; /* Center the section */
-            max-width: 800px; /* Limit width */
+            background-color: #ecf0f1;
+            /* Light gray background for contrast */
+            padding: 20px;
+            /* Padding for spacing */
+            border-radius: 10px;
+            /* Rounded corners */
+            margin: 20px auto;
+            /* Center the section */
+            max-width: 800px;
+            /* Limit width */
         }
 
         /* Contact form styling */
         form {
-            background: #fff; /* White background for form */
-            padding: 20px; /* Padding for spacing */
-            border-radius: 10px; /* Rounded corners */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-            margin: 20px auto; /* Center the form */
-            max-width: 600px; /* Limit form width */
+            background: #fff;
+            /* White background for form */
+            padding: 20px;
+            /* Padding for spacing */
+            border-radius: 10px;
+            /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            /* Subtle shadow */
+            margin: 20px auto;
+            /* Center the form */
+            max-width: 600px;
+            /* Limit form width */
         }
 
         form label {
-            display: block; /* Block display for labels */
-            margin: 15px 0 5px; /* Margin for labels */
+            display: block;
+            /* Block display for labels */
+            margin: 15px 0 5px;
+            /* Margin for labels */
         }
 
-        form input, form textarea {
-            width: 100%; /* Full width inputs */
-            padding: 10px; /* Padding for inputs */
-            margin-bottom: 20px; /* Space below inputs */
-            border: 1px solid #ccc; /* Light border */
-            border-radius: 5px; /* Rounded corners */
+        form input,
+        form textarea {
+            width: 100%;
+            /* Full width inputs */
+            padding: 10px;
+            /* Padding for inputs */
+            margin-bottom: 20px;
+            /* Space below inputs */
+            border: 1px solid #ccc;
+            /* Light border */
+            border-radius: 5px;
+            /* Rounded corners */
         }
 
         footer {
             text-align: center;
-            margin: 20px 0; /* Margin for footer */
+            margin: 20px 0;
+            /* Margin for footer */
             font-size: 1em;
-            color: #666; /* Gray color for footer */
+            color: #666;
+            /* Gray color for footer */
         }
 
         /* Media query for responsiveness */
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.5em; /* Smaller heading on mobile */
+                font-size: 2.5em;
+                /* Smaller heading on mobile */ /* Smaller heading on mobile devices */
             }
+
             button {
-                font-size: 1.2em; /* Smaller button size */
+                font-size: 1.2em;
+                /* Smaller button size */ /* Smaller button size on mobile */
             }
         }
     </style>
 </head>
+
 <body>
     <h1>Welcome to My Homepage</h1>
-    <button id="nameButton">Click to Enter Your Name</button>
-    <p id="greeting"></p>
-    
+
     <nav>
         <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
-        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
-        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
+        <a
+            href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM
+            Classes</a>
+        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a> <!-- Link to TMU admissions page -->
         <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE" target="_blank">My School</a>
-                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a>
+            <button onclick="myFunction()" class="dropbtn">Menu</button> <!-- Dropdown menu for additional links -->
+            <div id="myDropdown" class="dropdown-content"> <!-- Dropdown button -->
+                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE"
+                    target="_blank">My School</a>
+                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a> <!-- Link to LinkedIn profile -->
+            </div>
             </div>
         </div>
     </nav>
 
+    <br />
+    <button class="btn" id="nameButton">Click to Enter Your Name</button> <!-- Button to enter name -->
+    <p id="greeting"></p> <!-- Placeholder for greeting message -->
+
+    <div class="image-container"> <!-- Container for profile image -->
+        <a href="/images/my_imagebig.jpg"> <!-- Link to larger image -->
+            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!"
+                style="width:200px; cursor:pointer;" />
+        </a>
+    </div>
+
     <section id="about">
         <h2>About Me</h2>
-        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work ethic and communication skills honed through years of volunteer work. Constantly developing and strengthening technical skills through collaboration in academic and professional settings.</p>
+        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work
+            ethic and communication skills honed through years of volunteer work. Constantly developing and
+            strengthening technical skills through collaboration in academic and professional settings.</p>
     </section>
 
     <form id="userForm">
@@ -207,12 +292,12 @@
         <textarea id="message" rows="4" required></textarea>
 
         <label>Interests:</label>
-        <label><input type="checkbox" name="interests" value="Web Development">Web Development</label>
-        <label><input type="checkbox" name="interests" value="Data Analysis">Data Analysis</label>
-        <label><input type="checkbox" name="interests" value="Machine Learning">Machine Learning</label>
+        <label><input type="checkbox" name="interest1" value="Web Development">Web Development</label>
+        <label><input type="checkbox" name="interest2" value="Data Analysis">Data Analysis</label>
+        <label><input type="checkbox" name="interest3" value="Machine Learning">Machine Learning</label>
 
-        <button type="submit">Submit</button>
-        <button type="reset">Clear</button>
+        <button class="btn" type="submit">Submit</button>
+        <button class="btn" type="reset">Clear</button>
     </form>
 
     <footer>
@@ -221,4 +306,5 @@
 
     <script src="/js/main.js"></script>
 </body>
+
 </html>
