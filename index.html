@@ -1,191 +1,245 @@
-<!DOCTYPE html> <!-- Declares the document type and version of HTML -->
-<html lang="en"> <!-- Starts the HTML document and sets the language to English -->
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="UTF-8"> <!-- Specifies the character encoding for the document -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Sets viewport for responsive design -->
-    <title>Your Homepage</title> <!-- Title of the webpage that appears in the browser tab -->
-    <link rel="stylesheet" href="/css/style.css"> <!-- Links to an external CSS stylesheet -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Homepage</title>
+    <link rel="stylesheet" href="/css/style.css">
     <style>
-        /* CSS styles for the page */
+        /* Reset some default styles */
         * {
-            box-sizing: border-box; /* Includes padding and border in the element's total width and height */
-            margin: 0; /* Resets margin for all elements */
-            padding: 0; /* Resets padding for all elements */
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
         }
 
         body {
-            font-family: 'Arial', sans-serif; /* Sets a clean sans-serif font */
-            background-color: #f4f4f4; /* Light gray background for the body */
-            color: #333; /* Dark gray text color */
-            line-height: 1.6; /* Increases line height for better readability */
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4; /* Light background color */
+            color: #333; /* Dark text color */
+            line-height: 1.6; /* Improved readability */
         }
 
         h1, h2 {
-            text-align: center; /* Centers the heading text */
-            color: #2c3e50; /* Sets a dark blue color for headings */
+            text-align: center;
+            color: #2c3e50; /* Dark blue color */
         }
 
         h1 {
-            font-size: 3.5em; /* Large font size for main heading */
-            margin: 20px 0; /* Adds vertical space around the heading */
+            font-size: 3.5em;
+            margin: 20px 0;
         }
 
         h2 {
-            margin: 20px 0; /* Adds vertical space around subheadings */
-            font-size: 2.5em; /* Slightly smaller font size for subheadings */
+            margin: 20px 0;
+            font-size: 2.5em;
         }
 
         button {
-            background-color: #3498db; /* Blue background for buttons */
-            color: white; /* White text color */
-            border: none; /* No border for buttons */
-            padding: 15px 30px; /* Padding for button size */
-            font-size: 1.5em; /* Larger font size for button text */
-            cursor: pointer; /* Changes cursor to pointer on hover */
-            border-radius: 5px; /* Rounds the corners of buttons */
-            transition: background-color 0.3s; /* Smooth transition effect for background color */
+            background-color: #3498db; /* Blue background */
+            color: white; /* White text */
+            border: none;
+            padding: 15px 30px; /* Increased padding */
+            font-size: 1.5em; /* Increased font size */
+            cursor: pointer;
+            border-radius: 5px; /* Rounded corners */
+            transition: background-color 0.3s;
         }
 
         button:hover {
-            background-color: #2980b9; /* Darker blue when hovering over the button */
+            background-color: #2980b9; /* Darker blue on hover */
         }
 
         #greeting {
-            font-size: 2em; /* Sets font size for greeting text */
-            margin: 30px 0; /* Adds vertical space around the greeting */
-            text-align: center; /* Centers the greeting text */
-            color: #27ae60; /* Green color for greeting text */
+            font-size: 2em;
+            margin: 30px 0;
+            text-align: center;
+            color: #27ae60; /* Green color for greeting */
         }
 
         .image-container {
-            text-align: center; /* Centers the image within the container */
-            margin: 40px 0; /* Adds vertical space around the image container */
+            text-align: center;
+            margin: 40px 0;
         }
 
         #myImage {
-            width: 100%; /* Image takes full width of its container */
-            max-width: 600px; /* Limits the maximum width of the image */
-            border-radius: 10px; /* Rounds the corners of the image */
-            transition: transform 0.2s; /* Smooth transition for transform effects */
+            width: 100%;
+            max-width: 600px; /* Maximum width */
+            border-radius: 10px; /* Rounded image corners */
+            transition: transform 0.2s;
         }
 
         #myImage:hover {
-            transform: scale(1.05); /* Slight zoom effect on image hover */
+            transform: scale(1.05); /* Slight zoom on hover */
         }
 
         nav {
-            background-color: #2c3e50; /* Dark background for the navigation bar */
-            overflow: hidden; /* Clears floats inside the navigation */
-            padding: 15px 0; /* Adds padding for vertical space in the navigation */
+            background-color: #2c3e50; /* Dark background for nav */
+            overflow: hidden; /* Clear floats */
+            padding: 15px 0; /* Padding for nav */
         }
 
         nav a {
-            float: left; /* Floats links to the left side of the nav */
-            display: block; /* Makes the entire area of the link clickable */
-            color: white; /* White text color for links */
-            text-align: center; /* Centers text within the link */
-            padding: 15px 20px; /* Adds padding around the link */
-            font-size: 1.2em; /* Font size for navigation links */
-            text-decoration: none; /* Removes underline from links */
-            transition: background-color 0.3s; /* Smooth transition effect for background color on hover */
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 15px 20px;
+            font-size: 1.2em;
+            text-decoration: none;
+            transition: background-color 0.3s;
         }
 
         nav a:hover {
-            background-color: #34495e; /* Darker background when hovering over links */
+            background-color: #34495e; /* Darker background on hover */
         }
 
         .dropdown {
-            position: relative; /* Positions the dropdown relative to its parent */
-            display: inline-block; /* Allows dropdown to be inline with other elements */
+            position: relative;
+            display: inline-block;
         }
 
         .dropdown-content {
-            display: none; /* Hides dropdown content by default */
-            position: absolute; /* Positions dropdown content absolutely */
-            background-color: #f9f9f9; /* Light background for dropdown items */
-            min-width: 200px; /* Minimum width for dropdown items */
-            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2); /* Shadow effect for dropdown */
-            z-index: 1; /* Ensures dropdown is above other elements */
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 200px; /* Minimum width for dropdown */
+            box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+            z-index: 1;
         }
 
         .dropdown-content a {
-            color: black; /* Black text color for dropdown links */
-            padding: 12px 16px; /* Padding around dropdown links */
-            text-decoration: none; /* Removes underline from dropdown links */
-            display: block; /* Makes the entire area of the link clickable */
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
         }
 
         .dropdown-content a:hover {
-            background-color: #ddd; /* Light background on hover for dropdown links */
+            background-color: #ddd; /* Light background on hover */
         }
 
         .show {
-            display: block; /* Displays dropdown content when active */
+            display: block; /* Show dropdown when activated */
         }
 
         #about {
-            background-color: #ecf0f1; /* Light gray background for the about section */
-            padding: 20px; /* Padding for spacing inside the section */
-            border-radius: 10px; /* Rounds the corners of the section */
-            margin: 20px auto; /* Centers the section with margin */
-            max-width: 800px; /* Limits the maximum width of the section */
+            background-color: #ecf0f1; /* Light gray background for contrast */
+            padding: 20px; /* Padding for spacing */
+            border-radius: 10px; /* Rounded corners */
+            margin: 20px auto; /* Center the section */
+            max-width: 800px; /* Limit width */
         }
 
         form {
-            background: #fff; /* White background for the form */
-            padding: 20px; /* Padding for spacing inside the form */
-            border-radius: 10px; /* Rounds the corners of the form */
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow for the form */
-            margin: 20px auto; /* Centers the form with margin */
-            max-width: 600px; /* Limits the maximum width of the form */
+            background: #fff; /* White background for form */
+            padding: 20px;
+            border-radius: 10px; /* Rounded corners */
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+            margin: 20px auto;
+            max-width: 600px; /* Limit form width */
         }
 
         form label {
-            display: block; /* Makes labels block elements for stacking */
-            margin: 15px 0 5px; /* Adds margin around labels */
+            display: block;
+            margin: 15px 0 5px; /* Margin for labels */
         }
 
         form input, form textarea {
-            width: 100%; /* Inputs and text areas take full width */
-            padding: 10px; /* Padding for inputs and text areas */
-            margin-bottom: 20px; /* Space below inputs and text areas */
-            border: 1px solid #ccc; /* Light border for inputs and text areas */
-            border-radius: 5px; /* Rounds corners of inputs and text areas */
+            width: 100%; /* Full width inputs */
+            padding: 10px;
+            margin-bottom: 20px; /* Space below inputs */
+            border: 1px solid #ccc; /* Light border */
+            border-radius: 5px; /* Rounded corners */
         }
 
         footer {
-            text-align: center; /* Centers footer text */
-            margin: 20px 0; /* Adds vertical space around the footer */
-            font-size: 1em; /* Standard font size for footer */
-            color: #666; /* Gray color for footer text */
+            text-align: center;
+            margin: 20px 0;
+            font-size: 1em;
+            color: #666; /* Gray color for footer */
         }
 
-        /* Media query for responsiveness on small screens */
+        /* Media query for responsiveness */
         @media (max-width: 600px) {
             h1 {
-                font-size: 2.5em; /* Smaller font size for headings on mobile */
+                font-size: 2.5em; /* Smaller heading on mobile */
             }
             button {
-                font-size: 1.2em; /* Smaller button size on mobile */
+                font-size: 1.2em; /* Smaller button size */
             }
         }
     </style>
 </head>
 <body>
-    <h1>Welcome to My Homepage</h1> <!-- Main heading of the page -->
-    <button id="nameButton">Click to Enter Your Name</button> <!-- Button to trigger name input -->
-    <p id="greeting"></p> <!-- Placeholder for greeting message -->
-
-    <div class="image-container"> <!-- Container for the image -->
-        <a href="/images/my_imagebig.jpg"> <!-- Link to larger version of the image -->
-            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" /> <!-- Image with hover effect -->
+    <h1>Welcome to My Homepage</h1>
+    <button id="nameButton">Click to Enter Your Name</button>
+    <p id="greeting"></p>
+    
+    <div class="image-container">
+        <a href="/images/my_imagebig.jpg">
+            <img id="myImage" src="/images/my_image.jpg" alt="Here is a picture of me!" style="width:200px; cursor:pointer;" />
         </a>
     </div>
 
-    <nav> <!-- Navigation bar -->
-        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a> <!-- Link to BTM info -->
-        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a> <!-- Link to BTM classes -->
-        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a> <!-- Link to admissions page -->
-        <div class="dropdown"> <!-- Dropdown menu for additional links -->
-            <button onclick="myFunction()" class="dropbtn">Menu</button> <!-- Button to toggle dropdown -->
-            <div id="myDropdown"
+    <nav>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
+        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
+        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE" target="_blank">My School</a>
+                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work ethic and communication skills honed through years of volunteer work. Constantly developing and strengthening technical skills through collaboration in academic and professional settings.</p>
+    </section>
+
+    <form id="userForm">
+        <h2>Contact Form</h2>
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone">
+
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" name="contactMethod" value="Email" required>Email</label>
+        <label><input type="radio" name="contactMethod" value="Phone">Phone</label>
+        <label><input type="radio" name="contactMethod" value="None">None</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" rows="4" required></textarea>
+
+        <label>Interests:</label>
+        <label><input type="checkbox" name="interests" value="Web Development">Web Development</label>
+        <label><input type="checkbox" name="interests" value="Data Analysis">Data Analysis</label>
+        <label><input type="checkbox" name="interests" value="Machine Learning">Machine Learning</label>
+
+        <button type="submit">Submit</button>
+        <button type="button" id="clearButton">Clear</button>
+    </form>
+
+    <footer>
+        <p>&copy; 2024 Aminah Syed.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script src="/js/form.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                const dropdowns = document.getElementsByClassName("
