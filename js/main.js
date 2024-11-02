@@ -5,7 +5,7 @@ document.getElementById('nameButton').addEventListener('click', function() {
     const name = prompt("Please enter your name:"); // Prompt the user to enter their name
     if (name) {
         // Display a greeting message if a name is provided
-        document.getElementById('greeting').innerText = `Hello, ${name}! Welcome to my homepage!`;
+        document.getElementById('greeting').innerText = `Hello ${name}, Welcome to My Homepage!`;
     }
 });
 
