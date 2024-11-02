@@ -6,20 +6,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Your Homepage</title>
     <link rel="stylesheet" href="/css/style.css">
+    <style>
+        /* Add this style for smooth scrolling */
+        html {
+            scroll-behavior: smooth; /* Enable smooth scrolling */
+        }
+    </style>
 </head>
 
 <body>
     <h1>Welcome to My Homepage</h1>
 
     <nav>
-        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management/">About BTM</a>
-        <a href="https://www.torontomu.ca/calendar/2023-2024/programs/trsm/business_tech/#!accordion-1595938804212-full-time--four-year-program">BTM Classes</a>
+        <a href="https://www.linkedin.com/in/aminah-syed2024">LinkedIn</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management">About BTM</a>
         <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="https://www.torontomu.ca/?gad_source=1&gclid=CjwKCAjwgfm3BhBeEiwAFfxrG9KecElAI6WK7My_zwSjV3FrcTpgFVEERwx-XW8AtmwrFSMvqiI48xoCs6wQAvD_BwE" target="_blank">My School</a>
-                <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">My LinkedIn</a>
+                <a href="#about">About Me</a>
+                <a href="#education">Education</a>
+                <a href="#courses">Courses</a>
+                <a href="#awards">Awards & Honors</a>
+                <a href="#extracurriculars">Extra-Curricular Activities</a>
+                <a href="#contact">Contact Form</a>
             </div>
         </div>
     </nav>
@@ -42,8 +52,16 @@
     <section id="education">
         <h2>Education</h2>
         <ul>
-            <li><strong>University Name</strong> (Year - Present) - Business Technology Management</li>
-            <li><strong>High School Name</strong> (Year - Year) - Diploma</li>
+            <li>
+                <strong>Toronto Metropolitan University</strong><br>
+                Business Technology Management BComm (Hons)<br>
+                <em>September 2022 - Present</em>
+            </li>
+            <li>
+                <strong>Bradford District High School</strong><br>
+                Ontario Scholar<br>
+                <em>September 2018 - June 2022</em>
+            </li>
         </ul>
     </section>
 
@@ -51,13 +69,13 @@
         <h2>Courses</h2>
         <p>I am currently enrolled in the Business Technology Management program, which focuses on integrating technology with business processes. One course that I found particularly useful is:</p>
         <div class="course">
-            <h3>Course Title: Data Analysis</h3>
-            <p>This course taught me essential data analysis skills that have helped me in understanding business metrics and making data-driven decisions.</p>
+            <h3>ITM200: Fundamentals of Programming</h3>
+            <p>This course taught me the fundamental principles of object-oriented, event-driven program design and implementation in a business environment</p>
         </div>
     </section>
 
     <section id="awards">
-        <h2>Awards and Honors</h2>
+        <h2>Awards & Honors</h2>
         <ul>
             <li>Dean's List - Year</li>
             <li>Academic Excellence Award - Year</li>
@@ -68,14 +86,14 @@
     <section id="extracurriculars">
         <h2>Extra-Curricular Activities</h2>
         <ul>
-            <li>Member of the Business Technology Management Student Association</li>
-            <li>Volunteer at [Organization Name] - Year</li>
-            <li>Participated in [Club/Activity Name] - Year</li>
+            <li>TedPack Mentor as part of Fit For Business</li>
+            <li>Peer Coach as part of the Program Advising and Student Success Center</li>
+            <li>General Associate as part of TMU Women in Leadership</li>
         </ul>
     </section>
 
     <form id="userForm">
-        <h2>Contact Form</h2>
+        <h2 id="contact">Contact Form</h2>
         <label for="name">Name:</label>
         <input type="text" id="name" required>
 
@@ -107,6 +125,24 @@
     </footer>
 
     <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        // Close the dropdown if the user clicks outside of it
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
+    </script>
 </body>
 
 </html>
