@@ -1,137 +1,166 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html> <!-- Defines the document type and version of HTML being used -->
+<html lang="en"> <!-- Specifies the language of the document (English) -->
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Homepage</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <style>
+    <meta charset="UTF-8"> <!-- Sets the character encoding for the document to UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures the page is responsive on different devices -->
+    <title>Your Homepage</title> <!-- Sets the title of the webpage that appears in the browser tab -->
+    <link rel="stylesheet" href="/css/style.css"> <!-- Links to an external CSS file for styling -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+
+        <style>
         /* Add this style for smooth scrolling */
         html {
-            scroll-behavior: smooth; /* Enable smooth scrolling */
+            scroll-behavior: smooth; /* Enables smooth scrolling behavior for anchor links */
         }
     </style>
 </head>
 
 <body>
-    <h1>Welcome to My Homepage</h1>
+    <h1>Aminah Syed</h1> <!-- Main heading of the webpage -->
 
-    <nav>
-        <a href="https://www.linkedin.com/in/aminah-syed2024">LinkedIn</a>
-        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management">About BTM</a>
-        <a href="https://www.torontomu.ca/admissions/">TMU Admissions</a>
-        <div class="dropdown">
-            <button onclick="myFunction()" class="dropbtn">Menu</button>
-            <div id="myDropdown" class="dropdown-content">
-                <a href="#about">About Me</a>
-                <a href="#education">Education</a>
-                <a href="#courses">Courses</a>
-                <a href="#awards">Awards & Honors</a>
-                <a href="#extracurriculars">Extra-Curricular Activities</a>
-                <a href="#contact">Contact Form</a>
+    <nav> <!-- Navigation bar containing links -->
+        <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a> <!-- Link to LinkedIn profile opens in a new tab -->
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a> <!-- Link to Business Technology Management program opens in a new tab -->
+        <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a> <!-- Link to TMU admissions page opens in a new tab -->        
+        <div class="dropdown"> <!-- Container for dropdown menu -->
+            <button onclick="myFunction()" class="dropbtn">Menu</button> <!-- Button to toggle dropdown menu -->
+            <div id="myDropdown" class="dropdown-content"> <!-- Dropdown menu content -->
+                <a href="#about">About Me</a> <!-- Link to About Me section -->
+                <a href="#education">Education</a> <!-- Link to Education section -->
+                <a href="#courses">Courses</a> <!-- Link to Courses section -->
+                <a href="#experience">Professional Experience</a> <!-- Link to Awards & Honors section -->
+                <a href="#extracurriculars">Extra-Curricular Activities</a> <!-- Link to Extra-Curricular Activities section -->
+                <a href="#contact">Contact Me</a> <!-- Link to Contact Form section -->
             </div>
         </div>
     </nav>
 
-    <br />
-    <button class="btn" id="nameButton">Click to Enter Your Name</button>
-    <p id="greeting"></p>
+    <br /> <!-- Line break for spacing -->
+    <button class="btn" id="nameButton">Click to Enter Your Name</button> <!-- Button to trigger name input -->
+    <p id="greeting"></p> <!-- Placeholder for greeting message -->
 
-    <div class="image-container">
-        <a href="/images/my_imagebig.jpg">
-            <img id="myImage" src="/images/my_image.jpg" alt="Profile picture" style="width:200px; cursor:pointer;" />
+    <div class="image-container"> <!-- Container for profile image -->
+        <a href="/images/my_imagebig.jpg"> <!-- Link to larger version of the profile image -->
+            <img id="myImage" src="/images/my_image.jpg" alt="Profile picture" style="width:200px; cursor:pointer;" /> <!-- Profile image with styling and alt text -->
         </a>
     </div>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work ethic and communication skills honed through years of volunteer work. Constantly developing and strengthening technical skills through collaboration in academic and professional settings.</p>
+    <section id="about"> <!-- About Me section -->
+        <h2>About Me</h2> <!-- Subheading for About Me section -->
+        <p>Avid first-year Business Technology Management student at the Ted Rogers School of Management. Strong work ethic and communication skills honed through years of volunteer work. Constantly developing and strengthening technical skills through collaboration in academic and professional settings.</p> <!-- Description of self -->
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>
-                <strong>Toronto Metropolitan University</strong><br>
-                Business Technology Management BComm (Hons)<br>
-                <em>September 2022 - Present</em>
+    <section id="education"> <!-- Education section -->
+        <h2>Education</h2> <!-- Subheading for Education section -->
+        <ul> <!-- Unordered list for education details -->
+            <li> <!-- List item for first educational institution -->
+                <strong>Toronto Metropolitan University</strong><br> <!-- Institution name in bold -->
+                Business Technology Management BComm (Hons)<br> <!-- Degree details -->
+                <em>September 2022 - Present</em> <!-- Enrollment period in italics -->
             </li>
-            <li>
-                <strong>Bradford District High School</strong><br>
-                Ontario Scholar<br>
-                <em>September 2018 - June 2022</em>
+            <li> <!-- List item for second educational institution -->
+                <strong>Bradford District High School</strong><br> <!-- Institution name in bold -->
+                Ontario Scholar<br> <!-- Recognition title -->
+                <em>September 2018 - June 2022</em> <!-- Graduation period in italics -->
             </li>
         </ul>
     </section>
 
-    <section id="courses">
-        <h2>Courses</h2>
-        <p>I am currently enrolled in the Business Technology Management program, which focuses on integrating technology with business processes. One course that I found particularly useful is:</p>
-        <div class="course">
-            <h3>ITM200: Fundamentals of Programming</h3>
-            <p>This course taught me the fundamental principles of object-oriented, event-driven program design and implementation in a business environment</p>
+    <section id="experience">
+        <h2> Professional Experience</h2>
+    
+        <div class="job">
+            <h3>Peer Coach</h3>
+            <p><em>Toronto Metropolitan University</em><br><em>Sep 2024 - Present</em></p>
+            <ul>
+                <li>Facilitated individual and group coaching sessions, employing active listening and facilitation skills to support the academic and personal development of TRSM students, enhancing student engagement by 25%.</li>
+                <li>Managed administrative tasks, including maintaining the PASS Google Calendar and entering data from coaching sessions, ensuring organizational efficiency and program effectiveness.</li>
+                <li>Participated in ongoing training and collaborated with cross-functional teams to align coaching practices with university objectives, fostering a supportive learning environment.</li>
+            </ul>
+            <br> <!-- Extra line break after the job -->
         </div>
-    </section>
+    
+        <div class="job">
+            <h3>TedPack Mentor</h3>
+            <p><em>Toronto Metropolitan University</em><br><em>June 2024 - Present</em></p>
+            <ul>
+                <li>Collaborated in a mentorship team to enhance program effectiveness, leading to a 30% increase in mentee engagement and retention rates through performance monitoring and stakeholder engagement.</li>
+                <li>Designed and delivered workshops on leadership, financial literacy, time management, and study skills, resulting in positive feedback from 90% of participants.</li>
+            </ul>
+            <br> <!-- Extra line break after the job -->
+        </div>
+    
+        <div class="job">
+            <h3>Property and Casualty Insurance Agent</h3>
+            <p><em>Desjardins Group</em><br><em>May 2023 - July 2024</em></p>
+            <ul>
+                <li>Processed approximately 15 client requests per hour, achieving a 20% increase in client satisfaction scores through effective communication and customer service.</li>
+                <li>Utilized analytical skills to assess and maintain a diverse risk portfolio, contributing to a 10% reduction in claims ratio over a 6-month period through risk mitigation strategies.</li>
+                <li>Presented data-driven insights and innovative solutions in weekly meetings with senior management, leading to the implementation of a new client onboarding process that improved efficiency by 25%.</li>
+            </ul>
+            <br> <!-- Extra line break after the job -->
+        </div>
+    
+        <div class="job">
+            <h3>Floral Clerk</h3>
+            <p><em>Sobeys Floral Department</em><br><em>June 2022 - April 2023</em></p>
+            <ul>
+                <li>Achieved a 95% customer satisfaction rating by efficiently processing transactions and providing personalized service in a fast-paced retail environment.</li>
+            </ul>
+            <br> <!-- Extra line break after the job -->
+        </div>
+    </section>    
 
-    <section id="awards">
-        <h2>Awards & Honors</h2>
-        <ul>
-            <li>Dean's List - Year</li>
-            <li>Academic Excellence Award - Year</li>
-            <li>Scholarship Name - Year</li>
+    <section id="extracurriculars"> <!-- Extra-Curricular Activities section -->
+        <h2>Extra-Curricular Activities</h2> <!-- Subheading for Extra-Curricular Activities section -->
+        <ul> <!-- Unordered list for activities -->
+            <li>TedPack Mentor as part of Fit For Business</li> <!-- List item for mentoring role -->
+            <li>Peer Coach as part of the Program Advising and Student Success Center</li> <!-- List item for coaching role -->
+            <li>General Associate as part of TMU Women in Leadership</li> <!-- List item for associate role -->
         </ul>
     </section>
 
-    <section id="extracurriculars">
-        <h2>Extra-Curricular Activities</h2>
-        <ul>
-            <li>TedPack Mentor as part of Fit For Business</li>
-            <li>Peer Coach as part of the Program Advising and Student Success Center</li>
-            <li>General Associate as part of TMU Women in Leadership</li>
-        </ul>
-    </section>
+    <form id="userForm"> <!-- Form for user input -->
+        <h2 id="contact">Contact Form</h2> <!-- Subheading for Contact Form section -->
+        <label for="name">Name:</label> <!-- Label for name input -->
+        <input type="text" id="name" required> <!-- Text input for name with required attribute -->
 
-    <form id="userForm">
-        <h2 id="contact">Contact Form</h2>
-        <label for="name">Name:</label>
-        <input type="text" id="name" required>
+        <label for="email">Email:</label> <!-- Label for email input -->
+        <input type="email" id="email" required> <!-- Email input with required attribute -->
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" required>
+        <label for="phone">Phone:</label> <!-- Label for phone input -->
+        <input type="tel" id="phone"> <!-- Telephone input (optional) -->
 
-        <label for="phone">Phone:</label>
-        <input type="tel" id="phone">
+        <label>Preferred Contact Method:</label> <!-- Label for contact method options -->
+        <label><input type="radio" name="contactMethod" value="Email" required>Email</label> <!-- Radio button for email contact method -->
+        <label><input type="radio" name="contactMethod" value="Phone">Phone</label> <!-- Radio button for phone contact method -->
+        <label><input type="radio" name="contactMethod" value="None">None</label> <!-- Radio button for no contact preference -->
 
-        <label>Preferred Contact Method:</label>
-        <label><input type="radio" name="contactMethod" value="Email" required>Email</label>
-        <label><input type="radio" name="contactMethod" value="Phone">Phone</label>
-        <label><input type="radio" name="contactMethod" value="None">None</label>
+        <label for="message">Message:</label> <!-- Label for message input -->
+        <textarea id="message" rows="4" required></textarea> <!-- Textarea for message input with required attribute -->
 
-        <label for="message">Message:</label>
-        <textarea id="message" rows="4" required></textarea>
+        <label>Interests:</label> <!-- Label for interests options -->
+        <label><input type="checkbox" name="interest1" value="Web Development">Web Development</label> <!-- Checkbox for web development interest -->
+        <label><input type="checkbox" name="interest2" value="Data Analysis">Data Analysis</label> <!-- Checkbox for data analysis interest -->
+        <label><input type="checkbox" name="interest3" value="Machine Learning">Machine Learning</label> <!-- Checkbox for machine learning interest -->
 
-        <label>Interests:</label>
-        <label><input type="checkbox" name="interest1" value="Web Development">Web Development</label>
-        <label><input type="checkbox" name="interest2" value="Data Analysis">Data Analysis</label>
-        <label><input type="checkbox" name="interest3" value="Machine Learning">Machine Learning</label>
-
-        <button class="btn" type="submit">Submit</button>
-        <button class="btn" type="reset">Clear</button>
+        <button class="btn" type="submit">Submit</button> <!-- Button to submit the form -->
+        <button class="btn" type="reset">Clear</button> <!-- Button to reset the form -->
     </form>
 
-    <footer>
-        <p>&copy; 2024 Your Name. All rights reserved.</p>
+    <footer> <!-- Footer section of the webpage -->
+        <p>&copy; 2024 Your Name. All rights reserved.</p> <!-- Copyright notice -->
     </footer>
 
-    <script src="/js/main.js"></script>
+    <script src="/js/main.js"></script> <!-- Links to an external JavaScript file -->
     <script>
-        function myFunction() {
-            document.getElementById("myDropdown").classList.toggle("show");
+        function myFunction() { <!-- Function to toggle dropdown menu visibility -->
+            document.getElementById("myDropdown").classList.toggle("show"); <!-- Toggles the "show" class on the dropdown menu -->
         }
 
-        // Close the dropdown if the user clicks outside of it
-        window.onclick = function(event) {
+         // Close the dropdown if the user clicks outside of it
+         window.onclick = function(event) {
             if (!event.target.matches('.dropbtn')) {
                 var dropdowns = document.getElementsByClassName("dropdown-content");
                 for (var i = 0; i < dropdowns.length; i++) {
