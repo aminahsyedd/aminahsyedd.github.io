@@ -5,75 +5,39 @@
     padding: 0; /* Remove default padding */
 }
 
+/* Body styles */
 body {
     font-family: 'Playfair Display', serif; /* Set the font for the body to Playfair Display */
     background-color: #f4f4f4; /* Light background color for the body */
     color: #333; /* Dark text color for readability */
-    line-height: 1.6; /* Improved line height for better text readability */
+    line-height: 1.6; /* Slightly reduced line height for a more compact look */
+    transform: scale(0.98); /* Slightly scale down the page */
+    transform-origin: top center; /* Keeps the top of the page fixed */
 }
 
-h1, h2 {
-    text-align: center; /* Center align headings */
+/* Main Heading Styles (for centering and font size increase) */
+h1 {
+    font-size: 3.8em; /* Slightly smaller font size for main heading */
+    margin: 30px 0; /* Margin above and below the heading */
+    text-align: center; /* Center align the heading */
     color: #2c3e50; /* Dark blue color for headings */
 }
 
-h1 {
-    font-size: 3.5em; /* Font size for the main heading */
-    margin: 20px 0; /* Margin above and below the heading */
-}
-
+/* Section Subheading (h2) Styling */
 h2 {
-    margin: 20px 0; /* Margin above and below subheadings */
-    font-size: 2.5em; /* Font size for subheadings */
-    border-bottom: 2px solid #3498db; /* Underline effect for subheadings */
-    padding-bottom: 10px; /* Padding below the subheading */
+    font-size: 2.8em; /* Slightly smaller font size for h2 */
+    margin: 30px 0; /* Margin above and below the h2 */
+    text-align: center; /* Center align the h2 */
+    color: #2c3e50; /* Dark blue color for h2 elements */
+    border-bottom: 3px solid #3498db; /* Thicker underline for visual separation */
+    padding-bottom: 15px; /* Padding below the h2 for spacing */
 }
 
-.btn {
-    background-color: #3498db; /* Blue background for buttons */
-    color: white; /* White text color */
-    border: none; /* No border */
-    padding: 10px 20px; /* Adjusted padding for a smaller button */
-    font-size: 1.2em; /* Decreased font size for better fitting */
-    font-family: 'Playfair Display', serif; /* Set the font for buttons to Playfair Display */
-    cursor: pointer; /* Change cursor to pointer on hover */
-    border-radius: 5px; /* Rounded corners for buttons */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for background color and scaling */
-}
-
-.btn:hover {
-    background-color: #2980b9; /* Darker blue when hovering over the button */
-    transform: translateY(-2px); /* Slight lift effect on hover */
-}
-
-#greeting {
-    font-size: 2em; /* Font size for the greeting message */
-    margin: 30px 0; /* Margin above and below the greeting */
-    text-align: center; /* Center align the greeting */
-    color: #706adf; /* Green color for the greeting text */
-}
-
-.image-container {
-    text-align: center; /* Center align the image container */
-    margin: 40px 0; /* Margin above and below the image container */
-}
-
-#myImage {
-    width: 100%; /* Full width for the image */
-    max-width: 600px; /* Maximum width for the image */
-    border-radius: 10px; /* Rounded corners for the image */
-    transition: transform 0.2s; /* Smooth transition for scaling */
-}
-
-#myImage:hover {
-    transform: scale(1.05); /* Slight zoom effect on hover */
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); /* Subtle shadow on hover */
-}
-
+/* Navigation Styling */
 nav {
     background-color: #2c3e50; /* Dark background for the navigation bar */
-    padding: 15px 0; /* Padding for the navigation bar */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Shadow for navigation */
+    padding: 20px 0; /* Increased padding for the navigation bar */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* More prominent shadow */
 }
 
 nav a {
@@ -81,8 +45,8 @@ nav a {
     display: block; /* Display links as block elements */
     color: white; /* White text color for links */
     text-align: center; /* Center align text within links */
-    padding: 15px 20px; /* Padding for links */
-    font-size: 1.2em; /* Font size for links */
+    padding: 18px 22px; /* Slightly smaller padding for links */
+    font-size: 1.3em; /* Slightly smaller font size for links */
     text-decoration: none; /* Remove underline from links */
     transition: background-color 0.3s; /* Smooth transition for background color */
 }
@@ -92,52 +56,188 @@ nav a:hover {
     border-radius: 5px; /* Rounded corners on hover */
 }
 
+/* Dropdown Button */
 .dropdown {
-    position: relative; /* Position relative for dropdown container */
-    display: inline-block; /* Display dropdown inline */
+    position: relative;
+    display: inline-block;
 }
 
 .dropbtn {
-    background-color: #34495e; /* Same blue as your other buttons */
-    color: white; /* White text color */
-    padding: 15px 20px; /* Padding for the button */
-    font-size: 1.2em; /* Font size for the button */
-    font-family: 'Playfair Display', serif; /* Set the font for dropdown button to Playfair Display */
-    border: none; /* No border */
-    border-radius: 5px; /* Rounded corners */
-    cursor: pointer; /* Pointer cursor on hover */
-    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover effects */
+    background-color: #2c3e50; /* Blue background for dropdown button */
+    color: white;
+    padding: 18px 22px; /* Slightly smaller padding */
+    font-size: 1.3em;
+    font-family: 'Playfair Display', serif;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 .dropbtn:hover {
-    background-color: #2980b9; /* Darker blue on hover */
-    transform: translateY(-2px); /* Slight lift effect on hover */
+    background-color: #34495e; /* Darker background on hover for links */
+    border-radius: 5px; /* Rounded corners on hover */
+    transform: translateY(-2px);
 }
 
 .dropdown-content {
-    display: none; /* Hide dropdown content by default */
-    position: absolute; /* Position absolutely within dropdown */
-    background-color: #f9f9f9; /* Light background color for dropdown */
-    min-width: 200px; /* Minimum width for dropdown */
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2); /* Shadow for dropdown */
-    z-index: 1; /* Ensure dropdown appears above other elements */
-    border-radius: 5px; /* Rounded corners for dropdown */
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 250px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.2); /* More noticeable shadow */
+    z-index: 1;
+    border-radius: 5px;
 }
 
 .dropdown-content a {
-    color: black; /* Black text color for dropdown links */
-    padding: 12px 16px; /* Padding for dropdown links */
-    text-decoration: none; /* Remove underline from links */
-    display: block; /* Display dropdown links as block elements */
-    transition: background-color 0.3s; /* Smooth transition for background color */
+    color: black;
+    padding: 12px 18px; /* Slightly smaller padding for dropdown items */
+    text-decoration: none;
+    display: block;
+    transition: background-color 0.3s;
 }
 
 .dropdown-content a:hover {
-    background-color: #ddd; /* Light background on hover for dropdown links */
+    background-color: #ddd;
 }
 
 .show {
-    display: block; /* Show dropdown content when activated */
+    display: block; /* Show dropdown content */
+}
+
+/* "About Me" Section */
+#bio {
+    margin: 50px 25px; /* Slightly larger margin for more space */
+    text-align: center; /* Center align the "About Me" content */
+}
+
+#bio p {
+    font-size: 1.3em; /* Slightly smaller font size for paragraph text */
+    margin-top: 20px;
+    color: #333;
+    text-align: center; /* Center align the paragraph text */
+}
+
+/* Profile Image Centering */
+.image-container {
+    text-align: center; /* Center the profile image */
+    margin-top: 30px; /* Adds space above the image */
+}
+
+#myImage {
+    width: 220px; /* Slightly smaller profile image */
+    border-radius: 50%; /* Makes the image circular */
+    cursor: pointer;
+}
+
+/* Button Styling */
+.btn {
+    background-color: #3498db; /* Blue background for buttons */
+    color: white;
+    border: none;
+    padding: 14px 28px; /* Slightly smaller padding for buttons */
+    font-size: 1.3em; /* Slightly smaller font size for buttons */
+    font-family: 'Playfair Display', serif;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s, transform 0.3s;
+    margin-top: 30px;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    margin: 30px 0; /* Increased margin for better spacing */
+    font-size: 1.1em; /* Slightly smaller footer text */
+    color: #666;
+}
+
+/* Miscellaneous Adjustments */
+p {
+    text-align: center; /* Center align all paragraphs */
+    margin: 25px 0; /* Slightly smaller margin around paragraphs */
+}
+
+footer p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Education Section */
+#education {
+    margin: 50px 25px;  /* Slightly smaller margin */
+    padding: 35px 25px; /* Slightly smaller padding */
+    background-color: #fff; /* Optional: add background color for separation */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Slightly softer shadow */
+}
+
+#education h2 {
+    font-size: 2.8em;  /* Slightly smaller font size for section heading */
+    text-align: center;  /* Center aligned heading */
+    margin-bottom: 30px;  /* Space below the heading */
+    color: #2c3e50;
+}
+
+#education ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding-left: 0;  /* Remove left padding */
+    font-size: 1.3em;  /* Slightly smaller font for list items */
+    line-height: 1.8;  /* Adjusted line height for better readability */
+}
+
+#education li {
+    margin-bottom: 25px;  /* More space between list items */
+}
+
+#education li strong {
+    font-size: 1.7em;  /* Slightly smaller font for institution names */
+    color: #3498db;  /* Optional: different color for institution name */
+}
+
+/* Extra-Curricular Section */
+#extracurriculars {
+    margin: 50px 25px;  /* Slightly smaller margin for more spacing */
+    padding: 35px 25px;  /* Slightly smaller padding */
+    background-color: #f9f9f9; /* Light background color for distinction */
+    border-radius: 15px; /* Rounded corners for the section */
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1); /* Softer shadow */
+}
+
+#extracurriculars h2 {
+    font-size: 2.8em;  /* Slightly smaller font size for the header */
+    text-align: center;  /* Center aligned heading */
+    margin-bottom: 30px;  /* Space below the heading */
+    color: #2c3e50;
+}
+
+#extracurriculars ul {
+    list-style-type: none;  /* Remove bullet points */
+    padding-left: 0;  /* Remove left padding */
+    font-size: 1.3em;  /* Slightly smaller font for list items */
+    line-height: 1.8;  /* Adjusted line height for better readability */
+}
+
+#extracurriculars li {
+    margin-bottom: 25px;  /* More space between activities */
+}
+
+#extracurriculars li:before {
+    content: "✓ ";  /* Optional: Add a check mark before each activity */
+    color: #3498db;  /* Same blue as your theme */
+    font-size: 1.7em;  /* Slightly smaller check mark */
+}
+
+/* Contact Form Section */
+#contact-form {
+    background-color: #fff; /* White background for the form */
+    padding
 }
 
 form {
@@ -173,48 +273,3 @@ form input[type="radio"], form input[type="checkbox"] {
     margin-right: 10px; /* Space to the right of checkboxes/radios */
 }
 
-footer {
-    text-align: center; /* Center align footer text */
-    margin: 20px 0; /* Margin above and below the footer */
-    font-size: 1em; /* Font size for footer text */
-    color: #666; /* Gray color for footer text */
-}
-
-/* Centering paragraph text */
-p {
-    text-align: center; /* Center align all paragraphs */
-    margin: 20px 0; /* Add margin above and below the paragraph */
-}
-
-/* Centering job titles */
-.job h3 {
-    text-align: center; /* Center align the job titles */
-    margin-bottom: 10px; /* Optional: adjust spacing below the title */
-}
-
-/* List styles for sections */
-#education ul,
-#awards ul,
-#extracurriculars ul,
-#experience ul { /* Added experience section */
-    list-style-type: disc; /* Use disc bullets */
-    padding-left: 20px; /* Add padding to indent the list */
-}
-
-#education li,
-#awards li,
-#extracurriculars li,
-#experience li { /* Added experience section */
-    margin-bottom: 10px; /* Add space between list items */
-    line-height: 1.5; /* Improve line height for readability */
-}
-
-/* Media query for responsiveness */
-@media (max-width: 600px) {
-    h1 {
-        font-size: 2.5em; /* Smaller font size for main heading on mobile devices */
-    }
-    button {
-        font-size: 1.2em; /* Smaller font size for buttons on mobile devices */
-    }
-}

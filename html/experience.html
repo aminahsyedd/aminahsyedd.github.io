@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aminah Syed</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Make sure this is correct for your project -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <h1>Aminah Syed</h1>
+    <nav>
+        <a href="index.html">Home</a> <!-- Home button -->
+        <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a>
+        <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="education.html">Education</a>
+                <a href="experience.html">Professional Experience</a>
+                <a href="extracurriculars.html">Extra-Curricular Activities</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+
+    <section id="experience">
+        <h2>Professional Experience</h2>
+
+        <div class="experience">
+            <p class="job-title"><strong>Peer Coach</strong></p>
+            <p class="organization">Toronto Metropolitan University</p>
+            <p class="date">Sep 2024 - Present</p>
+            <ul>
+                <li>Facilitated individual and group coaching sessions, employing active listening and facilitation skills to support the academic and personal development of TRSM students, enhancing student engagement by 25%.</li>
+                <li>Managed administrative tasks, including maintaining the PASS Google Calendar and entering data from coaching sessions, ensuring organizational efficiency and program effectiveness.</li>
+                <li>Participated in ongoing training and collaborated with cross-functional teams to align coaching practices with university objectives, fostering a supportive learning environment.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <p class="job-title"><strong>TedPack Mentor</strong></p>
+            <p class="organization">Toronto Metropolitan University</p>
+            <p class="date">June 2024 - Present</p>
+            <ul>
+                <li>Collaborated in a mentorship team to enhance program effectiveness, leading to a 30% increase in mentee engagement and retention rates through performance monitoring and stakeholder engagement.</li>
+                <li>Designed and delivered workshops on leadership, financial literacy, time management, and study skills, resulting in positive feedback from 90% of participants.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <p class="job-title"><strong>Property and Casualty Insurance Agent</strong></p>
+            <p class="organization">Desjardins Group</p>
+            <p class="date">May 2023 - July 2024</p>
+            <ul>
+                <li>Processed approximately 15 client requests per hour, achieving a 20% increase in client satisfaction scores through effective communication and customer service.</li>
+                <li>Utilized analytical skills to assess and maintain a diverse risk portfolio, contributing to a 10% reduction in claims ratio over a 6-month period through risk mitigation strategies.</li>
+                <li>Presented data-driven insights and innovative solutions in weekly meetings with senior management, leading to the implementation of a new client onboarding process that improved efficiency by 25%.</li>
+            </ul>
+        </div>
+
+        <div class="experience">
+            <p class="job-title"><strong>Floral Clerk</strong></p>
+            <p class="organization">Sobeys Floral Department</p>
+            <p class="date">June 2022 - April 2023</p>
+            <ul>
+                <li>Achieved a 95% customer satisfaction rating by efficiently processing transactions and providing personalized service in a fast-paced retail environment.</li>
+            </ul>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
+    </script>
+</body>
+</html>

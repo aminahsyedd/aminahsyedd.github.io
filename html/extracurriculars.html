@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aminah Syed</title>
+    <link rel="stylesheet" href="/css/style.css"> <!-- Make sure this is correct for your project -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <style>
+        html { scroll-behavior: smooth; }
+    </style>
+</head>
+<body>
+    <h1>Aminah Syed</h1>
+    <nav>
+        <a href="index.html">Home</a> <!-- Home button -->
+        <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a>
+        <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="education.html">Education</a>
+                <a href="experience.html">Professional Experience</a>
+                <a href="extracurriculars.html">Extra-Curricular Activities</a>
+                <a href="contact.html">Contact Me</a>
+            </div>
+        </div>
+    </nav>
+    
+    <section id="extracurriculars">
+        <h2>My Extra-Curricular Involvement</h2>
+        <ul>
+            <li><strong>TedPack Mentor</strong> - Part of Fit For Business at Toronto Metropolitan University</li>
+            <li><strong>Peer Coach</strong> - Program Advising and Student Success Center, Toronto Metropolitan University</li>
+            <li><strong>General Associate</strong> - TMU Women in Leadership</li>
+        </ul>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
+    </footer>
+
+    <script src="/js/main.js"></script>
+    <script>
+        function myFunction() {
+            document.getElementById("myDropdown").classList.toggle("show");
+        }
+
+        window.onclick = function(event) {
+            if (!event.target.matches('.dropbtn')) {
+                var dropdowns = document.getElementsByClassName("dropdown-content");
+                for (var i = 0; i < dropdowns.length; i++) {
+                    var openDropdown = dropdowns[i];
+                    if (openDropdown.classList.contains('show')) {
+                        openDropdown.classList.remove('show');
+                    }
+                }
+            }
+        };
+    </script>
+</body>
+</html>
