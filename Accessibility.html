@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accessibility</title>
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>Accessibility</h1> <!-- Main Heading for Accessibility Page -->
+
+    <!-- Navigation Bar -->
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a>
+        <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a>
+        <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a>
+        <div class="dropdown">
+            <button onclick="myFunction()" class="dropbtn">Menu</button>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="education.html">Education</a>
+                <a href="experience.html">Professional Experience</a>
+                <a href="extracurriculars.html">Extra-Curricular Activities</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="accessibility.html">Accessibility</a>
+            </div>
+        </div>
+    </nav>
+
+   <!-- Video Section -->
+<section id="video">
+    <h2>YouTube Video with Custom Controls</h2>
+    <p>This is a custom YouTube video embed. It includes basic controls like play, pause, and volume. The video is sourced from YouTube. Proper citation is provided below.</p>
+    
+    <!-- Embed YouTube Video -->
+    <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/VOpg_qvND80" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
+    
+    <p><strong>Citation:</strong> YouTube. (2022, April 26). TORONTO METROPOLITAN UNIVERSITY CAMPUS TOUR (FORMERLY RYERSON) | TMU CAMPUS TOUR IN DOWNTOWN TORONTO. YouTube. <a href="https://www.youtube.com/watch?v=VOpg_qvND80" target="_blank" rel="noopener noreferrer">https://www.youtube.com/watch?v=VOpg_qvND80</a></p>
+</section>
+
+    <!-- Text Enlargement Section -->
+    <section id="text-enlargement">
+        <h2>Text Enlargement</h2>
+        <p id="text-example">Click the button below to increase the text size for better readability.</p>
+        <button class="centered" onclick="enlargeText()">Enlarge Text</button> <!-- Added centered class -->
+    </section>
+
+    <!-- Dark Mode Section -->
+    <section id="dark-mode">
+        <h2>Dark Mode</h2>
+        <p class="dark-mode-blurb">Click the button below to toggle between light and dark modes for a better viewing experience.</p>
+        <!-- Wrapper for centering the button -->
+        <div class="button-container">
+            <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+        </div>
+    </section>    
+
+  <!-- Images with Alt-Text Section -->
+<section id="images">
+    <h2>Images with Alt-Text</h2>
+
+    <!-- Flex container for the images -->
+    <div class="image-container">
+        <div class="image-item">
+            <img id="image1" src="images/IMG_5893.jpg" alt="The view of Al Haram from the Clock Tower Hotel in Mecca, Saudi Arabia, taken on August 6, 2024" width="300">
+            <button class="centered" onclick="displayAltText('image1')">Show Alt-Text</button>
+        </div>
+        <div class="image-item">
+            <img id="image2" src="images/IMG_6066.jpg" alt="A scenic view of the Al Hajlah District in Mecca, Saudi Arabia, taken on August 11, 2024" width="300">
+            <button class="centered" onclick="displayAltText('image2')">Show Alt-Text</button>
+        </div>
+        <div class="image-item">
+            <img id="image3" src="images/IMG_6200.jpg" alt="A picture of the courtyard of the Prophet's Mosque, taken in Madinah, Saudi Arabia on August 14, 2024" width="300">
+            <button class="centered" onclick="displayAltText('image3')">Show Alt-Text</button>
+        </div>
+    </div>
+
+    <p id="alt-text-display"></p> <!-- Placeholder for displaying the alt text -->
+</section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Aminah Syed. All rights reserved.</p> <!-- Footer with copyright notice -->
+    </footer>
+
+    <!-- Link to External JavaScript for Accessibility -->
+    <script src="js/accessibility.js"></script> <!-- Link to the accessibility.js file -->
+</body>
+
+</html>

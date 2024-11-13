@@ -5,14 +5,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Aminah Syed</title>
-    <link rel="stylesheet" href="/css/style.css"> <!-- External CSS file link -->
+    <!-- Correcting the CSS and JS file paths -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet"> <!-- Google font -->
-
-    <style>
-        html {
-            scroll-behavior: smooth; /* Enables smooth scrolling for anchor links */
-        }
-    </style>
 </head>
 
 <body>
@@ -20,17 +15,18 @@
 
     <!-- Navigation Bar -->
     <nav>
-        <a href="index.html">Home</a> <!-- Home button -->
+        <a href="index.html">Home</a>
         <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a>
         <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a>
         <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a>
         <div class="dropdown">
             <button onclick="myFunction()" class="dropbtn">Menu</button>
             <div id="myDropdown" class="dropdown-content">
-                <a href="/html/education.html">Education</a>
-                <a href="/html/experience.html">Professional Experience</a>
-                <a href="/html/extracurriculars.html">Extra-Curricular Activities</a>
-                <a href="/html/contact.html">Contact Me</a>
+                <a href="education.html">Education</a>
+                <a href="experience.html">Professional Experience</a>
+                <a href="extracurriculars.html">Extra-Curricular Activities</a>
+                <a href="contact.html">Contact Me</a>
+                <a href="accessibility.html">Accessibility</a>
             </div>
         </div>
     </nav>
@@ -42,9 +38,9 @@
     <p id="greeting"></p> <!-- Placeholder for greeting -->
 
     <!-- Profile Image -->
-    <div class="image-container">
-        <a href="/images/my_imagebig.jpg">
-            <img id="myImage" src="/images/my_image.jpg" alt="Profile Picture" style="width: 200px; cursor: pointer;" />
+    <div class="image-container-home">
+        <a href="images/my_imagebig.jpg">
+            <img id="myImage" src="images/my_image.jpg" alt="Profile Picture" />
         </a>
     </div>
 
@@ -56,12 +52,11 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 Aminah Syed. All rights reserved.</p> <!-- Footer with copyright notice -->
+        <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
     </footer>
 
     <!-- Link to External JavaScript -->
-    <script src="/js/main.js"></script> <!-- External JavaScript file link -->
-
+    <script src="js/main.js"></script> <!-- Link to external JS -->
 </body>
 
 </html>
