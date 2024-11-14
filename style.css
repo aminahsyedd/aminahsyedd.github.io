@@ -234,6 +234,62 @@ footer p {
     color: #3498db;  /* Optional: different color for names */
 }
 
+/* Professional Experience Section */
+#experience {
+    margin: 50px 25px;
+    padding: 35px 25px;
+    background-color: #fff;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+}
+
+#experience h2 {
+    font-size: 2.8em;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2c3e50;
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 15px;
+}
+
+/* Main job title (Peer Coach, TedPack Mentor, etc.) */
+#experience li .job-title {
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the title */
+    font-size: 2.2em; /* Increased font size for the title */
+    font-weight: bold;
+    color: #2c3e50; /* Dark color for title */
+    margin-bottom: 5px;
+}
+
+/* Company Name (Toronto Metropolitan University, Desjardins Group, etc.) */
+#experience li .company-name {
+    font-family: 'Roboto', sans-serif; /* Clean sans-serif for the company name */
+    font-size: 1.8em; /* Increased font size for company name */
+    font-weight: 500;
+    color: #3498db; /* Blue color for company name */
+    margin-bottom: 10px;
+}
+
+/* Dates (Sep 2024 - Present, May 2023 - July 2024, etc.) */
+#experience li .job-dates {
+    font-family: 'Roboto', sans-serif; /* Same clean sans-serif as company name */
+    font-size: 1.5em; /* Increased font size for dates */
+    color: #777; /* Light grey color */
+    font-style: italic; /* Italics for dates */
+    margin-bottom: 10px;
+}
+
+/* Job description */
+#experience li .job-description {
+    font-family: 'Arial', sans-serif; /* Clean sans-serif for the description */
+    font-size: 1.2em; /* Standard size for the job description */
+    color: #333; /* Dark color for the description */
+    line-height: 1.6; /* Line spacing for readability */
+    margin-top: 15px;
+    padding-left: 15px;
+    border-left: 3px solid #3498db; /* Vertical blue line for the description */
+}
+
 /* Contact Form Section */
 #contact-form {
     background-color: #fff; /* White background for the form */
