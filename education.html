@@ -10,7 +10,7 @@
 <body>
     <h1>Aminah Syed</h1>
     <nav>
-        <a href="/index.html">Home</a> <!-- Home button -->
+        <a href="index.html">Home</a>
         <a href="https://www.linkedin.com/in/aminah-syed2024" target="_blank">LinkedIn</a>
         <a href="https://www.torontomu.ca/programs/undergraduate/business-technology-management" target="_blank">About BTM</a>
         <a href="https://www.torontomu.ca/admissions/" target="_blank">TMU Admissions</a>
@@ -20,20 +20,33 @@
                 <a href="education.html">Education</a>
                 <a href="experience.html">Professional Experience</a>
                 <a href="extracurriculars.html">Extra-Curricular Activities</a>
+                <a href="seo.html">SEO & SMO</a>
+                <a href="accessibility.html">Downloads</a>
                 <a href="contact.html">Contact Me</a>
-                <!-- New Accessibility link -->
-                <a href="accessibility.html">Accessibility</a> <!-- Added here -->
             </div>
         </div>
     </nav>
     
-    <section id="education">
+    <section id="education" class="content-box">
         <h2>Education</h2>
         <ul>
-            <li><strong>Toronto Metropolitan University</strong><br>Business Technology Management BComm (Hons)<br><em>September 2022 - Present</em></li>
-            <li><strong>Bradford District High School</strong><br>Ontario Scholar<br><em>September 2018 - June 2022</em></li>
+            <li>
+                <strong>Toronto Metropolitan University</strong><br>
+                Business Technology Management BComm (Hons)<br>
+                <em>September 2022 - Present</em>
+            </li>
+            <li>
+                <strong>Bradford District High School</strong><br>
+                Ontario Scholar<br>
+                <em>September 2018 - June 2022</em>
+            </li>
         </ul>
-    </section>
+    </section>    
+
+     <!-- Dark Mode Toggle Button -->
+<div class="dark-mode-container">
+    <button id="dark-mode-button">Dark Mode</button>
+</div>
 
     <footer>
         <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
@@ -41,5 +54,8 @@
 
     <!-- Include main.js here -->
     <script src="/js/main.js"></script>  <!-- Make sure the path is correct -->
+
+    <script src="/js/darkmode.js"></script>
+
 </body>
 </html>

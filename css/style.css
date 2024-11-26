@@ -263,7 +263,7 @@ footer p {
 
 /* Company Name (Toronto Metropolitan University, Desjardins Group, etc.) */
 #experience li .company-name {
-    font-family: 'Roboto', sans-serif; /* Clean sans-serif for the company name */
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the title */
     font-size: 1.8em; /* Increased font size for company name */
     font-weight: 500;
     color: #3498db; /* Blue color for company name */
@@ -272,7 +272,7 @@ footer p {
 
 /* Dates (Sep 2024 - Present, May 2023 - July 2024, etc.) */
 #experience li .job-dates {
-    font-family: 'Roboto', sans-serif; /* Same clean sans-serif as company name */
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the title */
     font-size: 1.5em; /* Increased font size for dates */
     color: #777; /* Light grey color */
     font-style: italic; /* Italics for dates */
@@ -281,7 +281,7 @@ footer p {
 
 /* Job description */
 #experience li .job-description {
-    font-family: 'Arial', sans-serif; /* Clean sans-serif for the description */
+    font-family: 'Playfair Display', serif; /* Elegant serif font for the title */
     font-size: 1.2em; /* Standard size for the job description */
     color: #333; /* Dark color for the description */
     line-height: 1.6; /* Line spacing for readability */
@@ -523,4 +523,390 @@ body.dark-mode button:hover {
         width: 80%; /* Allow images to take up most of the available width on small screens */
         max-width: 300px; /* Limit the width to prevent them from becoming too large */
     }
+}
+
+/* Dark mode styles for #about section */
+body.dark-mode #about {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px; /* Spacing */
+    border-radius: 10px; /* Rounded corners */
+    border: none; /* Ensure no borders */
+    box-shadow: none; /* Ensure no shadows */
+    margin: 0; /* Eliminate any external spacing */
+}
+
+/* Styling for the heading inside the About Me box */
+body.dark-mode #about h2 {
+    color: #ffffff; /* Bright white for better visibility */
+    font-family: 'Playfair Display', serif; /* Match the design */
+    border-bottom: 2px solid #4a90e2; /* Blue accent for the underline */
+    margin-bottom: 10px; /* Ensure spacing is consistent */
+}
+
+/* Paragraph styling in dark mode */
+body.dark-mode #about p {
+    color: #dcdcdc; /* Softer light color for the text */
+    line-height: 1.6; /* Improve text spacing */
+    margin: 0; /* Ensure no unnecessary margins */
+}
+
+/* Footer adjustments in dark mode */
+body.dark-mode footer {
+    background-color: #1e1e1e; /* Match the section's background */
+    color: #a0a0a0; /* Softer gray text for the footer */
+    text-align: center;
+    padding: 20px 0; /* Consistent spacing */
+    margin: 0; /* Prevent footer spacing issues */
+    border-top: 1px solid #3e3e3e; /* Separate footer visually */
+}
+
+/* Dark mode styles for #education section */
+body.dark-mode #education {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px; /* Maintain spacing */
+    border-radius: 10px; /* Add rounded corners */
+    border: 1px solid #3e3e3e; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+/* General adjustments to body in dark mode */
+body.dark-mode {
+    background-color: #121212; /* Dark background for the whole page */
+    color: #e0e0e0; /* Light text */
+    margin: 0;
+    padding: 0;
+}
+
+/* Dark Mode Container for Top-Right Position (fixed) */
+.dark-mode-container {
+    position: fixed;
+    top: 20px; /* Adjust as needed */
+    right: 20px; /* Adjust as needed */
+    z-index: 1000;
+}
+
+/* Dark Mode Toggle Button */
+.dark-mode-switch {
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+    position: relative;
+    cursor: pointer;
+}
+
+/* Headings inside #education */
+body.dark-mode #education h2 {
+    color: #ffffff; /* Bright white heading for visibility */
+    border-bottom: 2px solid #4a90e2; /* Accent underline */
+}
+
+/* List items inside #education */
+body.dark-mode #education li {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve spacing */
+}
+
+/* Emphasized text inside #education */
+body.dark-mode #education em {
+    color: #a0a0a0; /* Slightly muted gray */
+}
+
+body.dark-mode #education {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px; /* Maintain spacing */
+    border-radius: 10px; /* Add rounded corners */
+    border: 1px solid #3e3e3e; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth */
+}
+
+/* Headings inside #education */
+body.dark-mode #education h2 {
+    color: #ffffff; /* Bright white heading for visibility */
+    border-bottom: 2px solid #4a90e2; /* Accent underline */
+}
+
+/* List items inside #education */
+body.dark-mode #education li {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve spacing */
+}
+
+/* Emphasized text inside #education */
+body.dark-mode #education em {
+    color: #a0a0a0; /* Slightly muted gray */
+}
+/* Dark mode styles for #experience section */
+body.dark-mode #experience {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px; /* Maintain spacing */
+    border-radius: 10px; /* Add rounded corners */
+    border: 1px solid #3e3e3e; /* Subtle border for structure */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Add depth with shadow */
+    margin: 0 auto; /* Center the section */
+    max-width: 800px; /* Optional: limit width for better readability */
+}
+
+/* Headings inside #experience */
+body.dark-mode #experience h2 {
+    color: #ffffff; /* Bright white heading for visibility */
+    font-family: 'Playfair Display', serif; /* Match the design aesthetic */
+    border-bottom: 2px solid #4a90e2; /* Accent underline */
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+/* Paragraphs and descriptions inside #experience */
+body.dark-mode #experience p {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve text spacing */
+    margin: 10px 0; /* Add vertical spacing */
+}
+
+/* Job titles inside #experience */
+body.dark-mode #experience .job-title {
+    font-weight: bold;
+    color: #e0e0e0; /* Bright text for titles */
+    margin-top: 10px; /* Spacing above job titles */
+}
+
+/* Dates inside #experience */
+body.dark-mode #experience .job-dates {
+    font-style: italic;
+    color: #a0a0a0; /* Slightly muted gray for dates */
+}
+
+/* Emphasized text inside #experience */
+body.dark-mode #experience em {
+    color: #a0a0a0; /* Slightly muted gray for emphasis */
+}
+
+/* Bullet lists inside #experience */
+body.dark-mode #experience ul {
+    list-style-type: disc; /* Standard bullet points */
+    margin-left: 20px; /* Indent bullets */
+    padding-left: 0;
+}
+
+/* Individual list items inside #experience */
+body.dark-mode #experience li {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve spacing for bullets */
+    margin-bottom: 8px; /* Space between items */
+}
+
+/* Optional styling for links */
+body.dark-mode #experience a {
+    color: #4a90e2; /* Blue links for contrast */
+    text-decoration: none; /* Remove underline */
+}
+
+body.dark-mode #experience a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* Dark mode styles for #extracurricular section */
+body.dark-mode #extracurriculars {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text */
+    padding: 20px; /* Maintain spacing */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #3e3e3e; /* Subtle border */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Depth with shadow */
+    margin: 0 auto; /* Center the section */
+    max-width: 800px; /* Optional: limit width for better readability */
+}
+
+/* Headings inside #extracurricular */
+body.dark-mode #extracurriculars h2 {
+    color: #ffffff; /* White heading for visibility */
+    font-family: 'Playfair Display', serif; /* Match the design aesthetic */
+    border-bottom: 2px solid #4a90e2; /* Blue accent underline */
+    margin-bottom: 15px; /* Add spacing below the heading */
+}
+
+/* Paragraphs and descriptions inside #extracurricular */
+body.dark-mode #extracurriculars p {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve text spacing */
+    margin: 10px 0; /* Vertical spacing */
+}
+
+/* Activity titles inside #extracurricular */
+body.dark-mode #extracurriculars .activity-title {
+    font-weight: bold;
+    color: #e0e0e0; /* Bright text for titles */
+    margin-top: 10px; /* Spacing above activity titles */
+}
+
+/* Dates inside #extracurricular */
+body.dark-mode #extracurriculars .activity-dates {
+    font-style: italic;
+    color: #a0a0a0; /* Muted gray for dates */
+}
+
+/* Bullet lists inside #extracurricular */
+body.dark-mode #extracurriculars ul {
+    list-style-type: disc; /* Standard bullet points */
+    margin-left: 20px; /* Indent bullets */
+    padding-left: 0;
+}
+
+/* Individual list items inside #extracurricular */
+body.dark-mode #extracurriculars li {
+    color: #dcdcdc; /* Softer gray for readability */
+    line-height: 1.6; /* Improve spacing for bullets */
+    margin-bottom: 8px; /* Space between items */
+}
+
+/* Optional styling for links */
+body.dark-mode #extracurriculars a {
+    color: #4a90e2; /* Blue links for contrast */
+    text-decoration: none; /* Remove underline */
+}
+
+body.dark-mode #extracurriculars a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+/* Dark mode styles for the Accessibility Section */
+body.dark-mode #accessibility {
+    background-color: #1e1e1e; /* Dark gray background */
+    color: #e0e0e0; /* Light text for readability */
+    padding: 30px; /* Add spacing around content */
+    border-radius: 12px; /* Smooth rounded corners */
+    border: 1px solid #444; /* Subtle border for separation */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); /* Depth with shadow */
+    width: 90%; /* Responsive width */
+    max-width: 800px; /* Limit maximum width */
+    margin: 20px auto; /* Center align the section */
+}
+
+/* Heading inside Accessibility Section */
+body.dark-mode #accessibility h2 {
+    color: #ffffff; /* Bright white heading for visibility */
+    font-family: 'Playfair Display', serif; /* Consistent font */
+    text-align: center; /* Center heading */
+    margin-bottom: 20px;
+    border-bottom: 2px solid #4a90e2; /* Accent underline */
+    padding-bottom: 10px;
+}
+
+/* Paragraph styling */
+body.dark-mode #accessibility p {
+    color: #dcdcdc; /* Softer light gray for readability */
+    line-height: 1.8; /* Improved spacing for accessibility */
+    margin-bottom: 20px; /* Add spacing between paragraphs */
+}
+
+/* List styling */
+body.dark-mode #accessibility ul {
+    list-style-type: disc; /* Use bullets */
+    padding-left: 20px; /* Indent from the left */
+    margin-bottom: 20px;
+}
+
+body.dark-mode #accessibility ul li {
+    color: #dcdcdc; /* Softer gray for list items */
+    line-height: 1.6; /* Spacing between items */
+}
+
+/* Link styling */
+body.dark-mode #accessibility a {
+    color: #4a90e2; /* Blue for links */
+    text-decoration: none; /* Remove underline */
+    transition: color 0.3s ease; /* Smooth hover effect */
+}
+
+body.dark-mode #accessibility a:hover {
+    color: #357ABD; /* Darker blue on hover */
+    text-decoration: underline; /* Add underline on hover */
+}
+
+/* Button styling for accessibility features */
+body.dark-mode #accessibility .btn {
+    background-color: #4a90e2; /* Primary blue color */
+    color: #ffffff; /* White text */
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    padding: 12px 20px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s ease;
+}
+
+body.dark-mode #accessibility .btn:hover {
+    background-color: #357ABD; /* Darker blue on hover */
+}
+
+/* Ensure responsiveness */
+body.dark-mode #accessibility {
+    font-size: 1rem; /* Default font size */
+}
+
+@media (max-width: 768px) {
+    body.dark-mode #accessibility {
+        font-size: 0.9rem; /* Slightly smaller font size for smaller screens */
+    }
+}
+/* Alt Text Placeholder Default (Light Mode) */
+#alt-text-display {
+    color: #333; /* Dark text for light mode */
+    margin-top: 10px;
+}
+
+/* Alt Text in Dark Mode */
+body.dark-mode #alt-text-display {
+    color: #ffffff; /* White text for dark mode */
+}
+
+/* Default Dark Mode Button Styling (Light Mode) */
+#dark-mode-button {
+    background-color: #f4f4f4; /* Light background */
+    color: #333; /* Dark text */
+    font-family: 'Playfair Display', serif; /* Font update */
+    border: 1px solid #ccc;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+/* Dark Mode Button Styling in Dark Mode */
+body.dark-mode #dark-mode-button {
+    background-color: #1e1e1e; /* Dark background */
+    color: #ffffff; /* White text */
+    font-family: 'Playfair Display', serif; /* Font update */
+    border: 1px solid #4a90e2; /* Optional blue accent */
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+/* Center the download buttons */
+#downloads ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center items */
+}
+
+#downloads li {
+    margin: 15px 0; /* Add spacing between items */
+}
+
+#downloads button {
+    font-family: 'Playfair Display', serif; /* Apply Playfair font */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 20px; /* Add padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2; /* Button color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+
+#downloads button:hover {
+    background-color: #357ab8; /* Change background on hover */
 }
