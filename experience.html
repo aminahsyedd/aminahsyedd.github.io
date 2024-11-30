@@ -82,13 +82,28 @@
     <button id="dark-mode-button">Dark Mode</button>
 </div>
 
+<!-- Increase Text Size Button -->
+<div class="increase-text-size-container">
+    <button id="increase-text-size-button">Increase Text Size</button>
+</div>
+
     <footer>
         <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
     </footer>
 
     <script src="/js/main.js"></script>
-
     <script src="js/darkmode.js"></script>
+
+    <script>
+        // Function to increase text size
+        document.getElementById('increase-text-size-button').addEventListener('click', function () {
+            // Get current font size
+            let currentFontSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            // Increase font size by 2px
+            let newFontSize = currentFontSize + 2;
+            document.body.style.fontSize = newFontSize + 'px';
+        });
+    </script>
 
 </body>
 </html>

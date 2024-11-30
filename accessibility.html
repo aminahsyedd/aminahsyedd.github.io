@@ -7,8 +7,6 @@
     <title>Downloads</title>
     <link rel="stylesheet" href="css/style.css"> <!-- Link to external CSS -->
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-        
-    
 </head>
 
 <body>
@@ -41,16 +39,19 @@
         <!-- Downloadable Items -->
         <ul>
             <li>
+                <p><strong>Resume (PDF):</strong> This PDF contains my most recent resume, outlining my academic achievements, work experience, and skills in Business Technology Management.</p>
                 <a href="files/aminah_syed_resume.pdf" download>
                     <button>Download Resume (PDF)</button>
                 </a>
             </li>
             <li>
+                <p><strong>Project Files (ZIP):</strong> This ZIP file contains all the necessary files for my recent project, including source code, documentation, and related resources.</p>
                 <a href="files/PROJECT.zip" download>
                     <button>Download Project Files (ZIP)</button>
                 </a>
             </li>
             <li>
+                <p><strong>Project Report (PDF):</strong> This PDF report provides a detailed explanation of the project, including objectives, methodologies, and outcomes. It complements the project files.</p>
                 <a href="files/Project_Report.pdf" download>
                     <button>Download Project Report (PDF)</button>
                 </a>
@@ -63,6 +64,11 @@
         <button id="dark-mode-button">Dark Mode</button>
     </div>
 
+    <!-- Increase Text Size Button -->
+    <div class="increase-text-size-container">
+        <button id="increase-text-size-button">Increase Text Size</button>
+    </div>
+
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 Aminah Syed. All rights reserved.</p>
@@ -71,6 +77,17 @@
     <!-- External JavaScript -->
     <script src="/js/Accessibility.js"></script>
     <script src="/js/darkmode.js"></script>
+
+    <script>
+        // Function to increase text size
+        document.getElementById('increase-text-size-button').addEventListener('click', function () {
+            // Get current font size
+            let currentFontSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            // Increase font size by 2px
+            let newFontSize = currentFontSize + 2;
+            document.body.style.fontSize = newFontSize + 'px';
+        });
+    </script>
 </body>
 
 </html>

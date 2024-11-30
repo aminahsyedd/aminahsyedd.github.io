@@ -554,7 +554,7 @@ body.dark-mode #about p {
 /* Footer adjustments in dark mode */
 body.dark-mode footer {
     background-color: #1e1e1e; /* Match the section's background */
-    color: #a0a0a0; /* Softer gray text for the footer */
+    color: #8a8a8a; /* Softer gray text for the footer */
     text-align: center;
     padding: 20px 0; /* Consistent spacing */
     margin: 0; /* Prevent footer spacing issues */
@@ -609,7 +609,7 @@ body.dark-mode #education li {
 
 /* Emphasized text inside #education */
 body.dark-mode #education em {
-    color: #a0a0a0; /* Slightly muted gray */
+    color: #8a8a8a; /* Slightly muted gray */
 }
 
 body.dark-mode #education {
@@ -635,7 +635,7 @@ body.dark-mode #education li {
 
 /* Emphasized text inside #education */
 body.dark-mode #education em {
-    color: #a0a0a0; /* Slightly muted gray */
+    color: #8a8a8a; /* Slightly muted gray */
 }
 /* Dark mode styles for #experience section */
 body.dark-mode #experience {
@@ -674,12 +674,12 @@ body.dark-mode #experience .job-title {
 /* Dates inside #experience */
 body.dark-mode #experience .job-dates {
     font-style: italic;
-    color: #a0a0a0; /* Slightly muted gray for dates */
+    color:#8a8a8a; /* Slightly muted gray for dates */
 }
 
 /* Emphasized text inside #experience */
 body.dark-mode #experience em {
-    color: #a0a0a0; /* Slightly muted gray for emphasis */
+    color: #8a8a8a; /* Slightly muted gray for emphasis */
 }
 
 /* Bullet lists inside #experience */
@@ -742,7 +742,7 @@ body.dark-mode #extracurriculars .activity-title {
 /* Dates inside #extracurricular */
 body.dark-mode #extracurriculars .activity-dates {
     font-style: italic;
-    color: #a0a0a0; /* Muted gray for dates */
+    color: #8a8a8a; /* Muted gray for dates */
 }
 
 /* Bullet lists inside #extracurricular */
@@ -909,4 +909,99 @@ body.dark-mode #dark-mode-button {
 
 #downloads button:hover {
     background-color: #357ab8; /* Change background on hover */
+}
+/* Button to increase text size */
+#increase-text-size-button {
+    font-family: 'Playfair Display', serif; /* Apply Playfair font */
+    font-size: 16px; /* Initial font size */
+    padding: 10px 20px;
+    background-color: #f4f4f4;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    top: 30px; /* Adjusted distance from the top */
+    left: 10px; /* Distance from the left of the page */
+    z-index: 1000; /* Ensure it appears above other elements */
+}
+/* Ensure the #downloads container is using flexbox to center its contents */
+#downloads {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the content horizontally */
+    justify-content: center; /* Center the content vertically */
+    text-align: center; /* Ensure text is centered inside the section */
+}
+
+/* Remove default list styles and make it a flex container */
+#downloads ul {
+    list-style: none; /* Remove bullet points */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center items horizontally */
+}
+
+/* Style each list item */
+#downloads li {
+    margin: 15px 0; /* Add spacing between items */
+}
+
+/* Button styles */
+#downloads button {
+    font-family: 'Playfair Display', serif; /* Apply Playfair font */
+    font-size: 18px; /* Adjust font size */
+    padding: 10px 20px; /* Add padding */
+    border: none;
+    border-radius: 5px;
+    background-color: #4a90e2; /* Button color */
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Hover effect */
+}
+
+#downloads button:hover {
+    background-color: #357ab8; /* Change background on hover */
+}
+/* Reduce space between sections */
+#downloads {
+    margin: 0; /* Remove default margin */
+    padding: 0;
+}
+
+/* Reduce space between list items */
+#downloads ul li {
+    margin-bottom: 10px; /* Reduced space between list items */
+    padding: 0;
+}
+
+/* Adjust paragraph space for description */
+#downloads p {
+    margin-bottom: 5px; /* Reduce space below the paragraph */
+    font-size: 18px; /* Optional: Adjust font size to your liking */
+}
+
+/* Style for the buttons */
+#downloads button {
+    margin-top: 5px; /* Reduced space between description and button */
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4a90e2;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Optional: Reduce space between headings */
+#downloads h2 {
+    margin-bottom: 10px; /* Reduced space below the heading */
+}
+
+/* Optional: Reduce space around the page */
+body {
+    margin: 0;
+    padding: 0;
 }

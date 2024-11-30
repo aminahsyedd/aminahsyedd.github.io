@@ -50,6 +50,10 @@
     <button id="dark-mode-button">Dark Mode</button>
 </div>
 
+<!-- Increase Text Size Button -->
+<div class="increase-text-size-container">
+    <button id="increase-text-size-button">Increase Text Size</button>
+</div>
 
     <!-- About Me Section -->
     <section id="experience">
@@ -66,8 +70,18 @@
 
     <!-- Link to External JavaScript -->
     <script src="js/main.js"></script> <!-- Link to external JS -->
-
     <script src="js/darkmode.js"></script>
-</body>
 
+    <script>
+        // Function to increase text size
+        document.getElementById('increase-text-size-button').addEventListener('click', function () {
+            // Get current font size
+            let currentFontSize = parseFloat(window.getComputedStyle(document.body).fontSize);
+            // Increase font size by 2px
+            let newFontSize = currentFontSize + 2;
+            document.body.style.fontSize = newFontSize + 'px';
+        });
+    </script>
+   
+</body>
 </html>
